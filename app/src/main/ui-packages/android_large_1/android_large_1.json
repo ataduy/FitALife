@@ -1,0 +1,295 @@
+{
+  "name": "android_large_1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "K7te3DNRpXOhpGJmLvNztR",
+    "node": "24:31",
+    "version": "4826903039",
+    "component-id": "8dcfd5faba17bb322c8c62a5aec832bb11dc0218"
+  },
+  "default": "Android Large - 1",
+  "documentation": "Login Page",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 2"
+      },
+      {
+        "type": "text",
+        "id": "Fit a Life"
+      },
+      {
+        "type": "image",
+        "id": "Adsız_Resim copy 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3"
+      },
+      {
+        "type": "text",
+        "id": "Log in"
+      },
+      {
+        "type": "text",
+        "id": "Sign up"
+      }
+    ],
+    "modes": {
+      "Android Large - 1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "Rectangle 2",
+              "Fit a Life",
+              "Adsız_Resim copy 1",
+              "Rectangle 3",
+              "Log in",
+              "Sign up"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "41.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "112.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "654.0"
+              }
+            },
+            "tap-handler": "$on Rectangle 1 tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "136.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Rectangle 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "620.0"
+              }
+            },
+            "vector-content": "rectangle_2.svg"
+          },
+          {
+            "id": "Fit a Life",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "139.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "400.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Fit a Life text content",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "letter-spacing": "0.10000000149011612",
+            "line-height": "1.3639999389648438",
+            "typeface": "Nunito"
+          },
+          {
+            "id": "Adsız_Resim copy 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "119.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "229.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "122.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "163.0"
+              }
+            },
+            "image-content": "$Adsız_Resim copy 1 image content",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 3",
+            "border-radius": "41.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "112.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "699.0"
+              }
+            },
+            "tap-handler": "$on Rectangle 3 tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "136.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "vector-content": "rectangle_3.svg"
+          },
+          {
+            "id": "Log in",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "158.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "708.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Log in text content",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "0.10000000149011612",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Sign up",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "153.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "663.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Sign up text content",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "0.10000000149011612",
+            "line-height": "1.171875"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on Rectangle 1 tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "Fit a Life text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Adsız_Resim copy 1 image content": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "on Rectangle 3 tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "Log in text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Sign up text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Android Large - 1",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      },
+      "parameters": {
+        "Fit a Life text content": "Fit a Life",
+        "Adsız_Resim copy 1 image content": "ads_z_resim_copy_1.jpeg",
+        "Log in text content": "Log in",
+        "Sign up text content": "Sign up"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
