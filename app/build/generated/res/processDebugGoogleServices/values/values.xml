@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">863062420199</string>
+    <string name="google_api_key" translatable="false">AIzaSyDVrlVtH_P5oMc4wENHnni2LmFCSXEnHZM</string>
+    <string name="google_app_id" translatable="false">1:863062420199:android:0ee6c117687f68a52c5042</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDVrlVtH_P5oMc4wENHnni2LmFCSXEnHZM</string>
+    <string name="google_storage_bucket" translatable="false">fitalife-5596c.appspot.com</string>
+    <string name="project_id" translatable="false">fitalife-5596c</string>
+</resources>

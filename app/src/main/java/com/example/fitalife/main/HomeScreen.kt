@@ -95,7 +95,7 @@ private fun HomeContent(
                     colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.ic_dumbell),
+                        painter = painterResource(id = R.drawable.weight_removebg_preview),
                         contentDescription = "Dumbbell",
                         modifier = Modifier
                             .padding(10.dp)
@@ -116,7 +116,7 @@ private fun HomeContent(
                     colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.ic_dumbell),
+                        painter = painterResource(id = R.drawable.run_removebg_preview),
                         contentDescription = "Dumbbell",
                         modifier = Modifier
                             .padding(10.dp)
@@ -137,7 +137,7 @@ private fun HomeContent(
                     colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.ic_dumbell),
+                        painter = painterResource(id = R.drawable.nutr_removebg_preview__1_),
                         contentDescription = "Dumbbell",
                         modifier = Modifier
                             .padding(10.dp)
