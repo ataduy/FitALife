@@ -9,15 +9,19 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.fitalife.auth.LoginScreen
-import com.example.fitalife.auth.SetupProfileScreen
 import com.example.fitalife.auth.SignupScreen
 import com.example.fitalife.auth.WelcomeScreen
 import com.example.fitalife.main.HomeScreen
 import com.example.fitalife.main.NotificationMessage
+import com.example.fitalife.main.ProfileScreen
+import com.example.fitalife.main.WorkoutDetailsScreen
+import com.example.fitalife.main.WorkoutsScreen
 import com.example.fitalife.ui.theme.FitALifeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -43,8 +47,10 @@ sealed class DestinationScreen(val route: String) {
     object Welcome: DestinationScreen("welcome")
     object Signup: DestinationScreen("signup")
     object Login: DestinationScreen("login")
-    object SetupProfile: DestinationScreen("setup")
+    object Profile: DestinationScreen("profile")
     object Home: DestinationScreen("home")
+    object Workouts: DestinationScreen("workouts")
+    object WorkoutDetails: DestinationScreen("workout-details/{workoutId}")
 }
 
 @Composable
@@ -64,11 +70,20 @@ fun FitALife() {
         composable(DestinationScreen.Login.route) {
             LoginScreen(navController = navController, vm = vm)
         }
-        composable(DestinationScreen.SetupProfile.route) {
-            SetupProfileScreen(navController = navController, vm = vm)
+        composable(DestinationScreen.Profile.route) {
+            ProfileScreen(navController = navController, vm = vm)
         }
         composable(DestinationScreen.Home.route) {
             HomeScreen(navController = navController, vm = vm)
+        }
+        composable(DestinationScreen.Workouts.route) {
+            WorkoutsScreen(navController = navController, vm = vm)
+        }
+        composable(route = DestinationScreen.WorkoutDetails.route,
+            arguments = listOf(navArgument("workoutId") { type = NavType.StringType })
+        ) { backStackEntry ->
+            WorkoutDetailsScreen(navController = navController, vm = vm,
+                workoutId = backStackEntry.arguments?.getString("workoutId") ?: "")
         }
     }
 }

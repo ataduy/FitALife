@@ -72,18 +72,18 @@ class AppViewModel @Inject constructor(
     private fun createOrUpdateProfile(
         username: String? = null,
         gender: String? = null,
-        age: String? = null,
         weight: String? = null,
         height: String? = null,
+        age: String? = null,
     ) {
         val uid = auth.currentUser?.uid
         val userData = UserData(
             userId = uid,
             username = username ?: userData.value?.username,
             gender = gender ?: userData.value?.gender,
-            age = age ?: userData.value?.age,
             weight = weight ?: userData.value?.weight,
-            height = height ?: userData.value?.height
+            height = height ?: userData.value?.height,
+            age = age ?: userData.value?.age
         )
 
         uid?.let { uid ->
@@ -110,6 +110,10 @@ class AppViewModel @Inject constructor(
                     inProgress.value = false
                 }
         }
+    }
+
+    fun updateProfileData(gender: String, weight: String, height: String, age: String) {
+        createOrUpdateProfile(username = null, gender, weight, height, age)
     }
 
 

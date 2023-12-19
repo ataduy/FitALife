@@ -28,21 +28,21 @@ fun NotificationMessage(vm: AppViewModel) {
     }
 }
 
-fun navigateTo(navContoller: NavController, dest: DestinationScreen) {
-    navContoller.navigate(dest.route) {
+fun navigateTo(navController: NavController, dest: DestinationScreen) {
+    navController.navigate(dest.route) {
         popUpTo(dest.route) // backstack ten siler
         launchSingleTop = true
     }
 }
 
 @Composable
-fun checkSignedIn(vm: AppViewModel, navContoller: NavController) {
+fun checkSignedIn(vm: AppViewModel, navController: NavController) {
     val alreadyLoggedIn = remember { mutableStateOf(false) }
     val signedIn = vm.signedIn.value
 
     if (signedIn && !alreadyLoggedIn.value) {
         alreadyLoggedIn.value = true
-        navContoller.navigate(DestinationScreen.Home.route) {
+        navController.navigate(DestinationScreen.Home.route) {
             popUpTo(0)
         }
     }

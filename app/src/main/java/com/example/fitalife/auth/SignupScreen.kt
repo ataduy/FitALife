@@ -43,14 +43,13 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.R.*
 import com.example.fitalife.main.checkSignedIn
 import com.example.fitalife.main.navigateTo
-import com.example.fitalife.ui.theme.nunitoregular
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignupScreen(navController: NavController, vm: AppViewModel) {
 
-    checkSignedIn(vm = vm, navContoller = navController)
+    checkSignedIn(vm = vm, navController = navController)
 
     val focus = LocalFocusManager.current
     val usernameState = remember { mutableStateOf(TextFieldValue()) }
@@ -120,7 +119,7 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                     text = "Email Adress",
                     style = TextStyle(
                         fontSize = 20.sp,
-                        fontFamily = nunitoregular,
+                        fontFamily = FontFamily.SansSerif,
                         fontWeight = FontWeight(700),
                         color = Color(0xFFF5F5F5),
                         letterSpacing = 0.1.sp,
@@ -157,7 +156,7 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                     text = "Password",
                     style = TextStyle(
                         fontSize = 20.sp,
-                        fontFamily = nunitoregular,
+                        fontFamily = FontFamily.SansSerif,
                         fontWeight = FontWeight(700),
                         color = Color(0xFFF5F5F5),
                         letterSpacing = 0.1.sp,
