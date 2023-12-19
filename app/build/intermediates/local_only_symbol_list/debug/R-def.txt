@@ -10,6 +10,7 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable nopnog_removebg_preview
 drawable nutr_removebg_preview__1_
 drawable pp_default
 drawable run_removebg_preview
