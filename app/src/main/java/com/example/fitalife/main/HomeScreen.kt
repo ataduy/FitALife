@@ -117,7 +117,7 @@ private fun HomeContent(
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.run_removebg_preview),
-                        contentDescription = "Dumbbell",
+                        contentDescription = "Run",
                         modifier = Modifier
                             .padding(10.dp)
                             .fillMaxSize()
@@ -138,7 +138,7 @@ private fun HomeContent(
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.nutr_removebg_preview__1_),
-                        contentDescription = "Dumbbell",
+                        contentDescription = "Diet",
                         modifier = Modifier
                             .padding(10.dp)
                             .fillMaxSize()
