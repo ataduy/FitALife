@@ -196,9 +196,9 @@ private fun HomeContent(
                 ) {
 
                 Image(
-                    painter = painterResource(R.drawable.nopnog_removebg_preview),
+                    painter = painterResource(R.drawable.nopnog__1_),
                     contentDescription = "No Pain No Gain",
-                    contentScale = ContentScale.FillBounds,
+                    contentScale = ContentScale.Crop,
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
             }
