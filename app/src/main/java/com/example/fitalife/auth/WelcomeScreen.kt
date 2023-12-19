@@ -23,7 +23,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -31,7 +30,6 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.main.navigateTo
-import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
 fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
@@ -65,7 +63,7 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                 Column {
                     Button(
                         onClick = {
-                            navigateTo(navContoller = navController, DestinationScreen.Signup)
+                            navigateTo(navController = navController, DestinationScreen.Signup)
                           },
                         modifier = Modifier
                             .width(136.dp),
@@ -74,15 +72,12 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Sign up",
-                            fontFamily = robotoregular,
-                            fontWeight = FontWeight(600)
-                        )
+                        Text(text = "Signup")
                     }
 
                     Button(
                         onClick = {
-                            navigateTo(navContoller = navController, DestinationScreen.Home)
+                            navigateTo(navController = navController, DestinationScreen.Login)
 
                         },
                         modifier = Modifier
@@ -92,10 +87,7 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Login",
-                            fontFamily = robotoregular,
-                            fontWeight = FontWeight(600)
-                        )
+                        Text(text = "Login")
                     }
                 }
 
