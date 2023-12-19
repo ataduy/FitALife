@@ -117,7 +117,7 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                 SpecialDivider()
 
                 Text(
-                    text = "Email Adress",
+                    text = "Email Address",
                     style = TextStyle(
                         fontSize = 20.sp,
                         fontFamily = nunitoregular,
