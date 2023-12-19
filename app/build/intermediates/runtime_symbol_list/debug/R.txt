@@ -1831,6 +1831,7 @@ int drawable mtrl_popupmenu_background 0x7f07009a
 int drawable mtrl_popupmenu_background_dark 0x7f07009b
 int drawable mtrl_tabs_default_indicator 0x7f07009c
 int drawable navigation_empty_icon 0x7f07009d
+int drawable nopnog_removebg_preview 0x7f0700b3
 int drawable notification_action_background 0x7f07009e
 int drawable notification_bg 0x7f07009f
 int drawable notification_bg_low 0x7f0700a0

@@ -152,18 +152,70 @@ private fun HomeContent(
 
             }
 
-            Card(modifier = Modifier
-                .padding(8.dp)
-                .fillMaxWidth()
-                .size(150.dp)
-                .border(
-                    width = 2.dp,
-                    color = Color(0xFFF5F5F5),
-                    shape = RoundedCornerShape(size = 20.dp)
-                ),
-                colors = CardDefaults.cardColors(containerColor = Color.Transparent),) {
-                    
+            Card(
+                modifier = Modifier
+                    .padding(top = 20.dp, start = 8.dp, end = 8.dp)
+                    .fillMaxWidth()
+                    .size(150.dp)
+                    .border(
+                        width = 2.dp,
+                        color = Color(0xFFF5F5F5),
+                        shape = RoundedCornerShape(size = 20.dp)
+                    ),
+
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+
+                ) {
+
                 Text(text = "Embark on a transformative fitness journey with FIT A LIFE We're thrilled to be a part of your quest for a healthier, happier you.",
+                    fontSize = 20.sp,
+                    fontFamily = robotoregular,
+                    fontWeight = FontWeight(600),
+                    color = Color.White,
+
+                    modifier = Modifier
+                        .padding(10.dp)
+
+                )
+            }
+
+            Card(
+                modifier = Modifier
+                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                    .fillMaxWidth()
+                    .size(183.dp)
+                    .border(
+                        width = 2.dp,
+                        color = Color(0xFFF5F5F5),
+                        shape = RoundedCornerShape(size = 20.dp)
+                    ),
+
+                colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
+
+                ) {
+
+                Image(
+                    painter = painterResource(R.drawable.nopnog_removebg_preview),
+                    contentDescription = "No Pain No Gain"
+                )
+            }
+
+            Card(
+                modifier = Modifier
+                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                    .fillMaxWidth()
+                    .size(150.dp)
+                    .border(
+                        width = 2.dp,
+                        color = Color(0xFFF5F5F5),
+                        shape = RoundedCornerShape(size = 20.dp)
+                    ),
+
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+
+                ) {
+
+                Text(text = "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
                     fontSize = 20.sp,
                     fontFamily = robotoregular,
                     fontWeight = FontWeight(600),
