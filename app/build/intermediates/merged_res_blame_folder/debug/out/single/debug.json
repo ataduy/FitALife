@@ -4,6 +4,10 @@
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\drawable-nodpi\\adsz_removebg_preview.png"
     },
     {
+        "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\drawable-nodpi_run_removebg_preview.png.flat",
+        "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\drawable-nodpi\\run_removebg_preview.png"
+    },
+    {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-mdpi\\ic_launcher.webp"
     },
@@ -12,24 +16,32 @@
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\drawable-nodpi_weight_removebg_preview.png.flat",
+        "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\drawable-nodpi\\weight_removebg_preview.png"
+    },
+    {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.fitalife.app-merged_res-79:/drawable-nodpi_nutr_removebg_preview__1_.png.flat",
-        "source": "com.example.fitalife.app-main-81:/drawable-nodpi/nutr_removebg_preview__1_.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/font_nunito.ttf.flat",
+        "source": "com.example.fitalife.app-main-81:/font/nunito.ttf"
     },
     {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/font_roboto.ttf.flat",
+        "source": "com.example.fitalife.app-main-81:/font/roboto.ttf"
     },
     {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\drawable_ic_dumbell.png.flat",
@@ -52,10 +64,6 @@
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.fitalife.app-merged_res-79:/drawable-nodpi_run_removebg_preview.png.flat",
-        "source": "com.example.fitalife.app-main-81:/drawable-nodpi/run_removebg_preview.png"
-    },
-    {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\xml\\backup_rules.xml"
     },
@@ -72,12 +80,12 @@
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.fitalife.app-merged_res-79:/drawable-nodpi_weight_removebg_preview.png.flat",
-        "source": "com.example.fitalife.app-main-81:/drawable-nodpi/weight_removebg_preview.png"
-    },
-    {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\drawable_pp_default.jpeg.flat",
         "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\drawable\\pp_default.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\drawable-nodpi_nutr_removebg_preview__1_.png.flat",
+        "source": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-main-81:\\drawable-nodpi\\nutr_removebg_preview__1_.png"
     },
     {
         "merged": "C:\\Users\\ARPENTAX\\.gradle\\daemon\\8.0\\com.example.fitalife.app-merged_res-79:\\xml_data_extraction_rules.xml.flat",

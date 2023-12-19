@@ -30,6 +30,7 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.main.navigateTo
+import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
 fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
@@ -72,7 +73,8 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Signup")
+                        Text(text = "Signup",
+                            fontFamily = robotoregular)
                     }
 
                     Button(
@@ -87,7 +89,8 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Login")
+                        Text(text = "Login",
+                            fontFamily = robotoregular)
                     }
                 }
 

@@ -4,7 +4,7 @@ import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.Font
-
+import com.example.fitalife.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
@@ -18,9 +18,15 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
 
-    val RobotoRegular = FontFamily (
-        Font(R.font.)
+
+)
+    val robotoregular = FontFamily (
+    Font(R.font.roboto)
     )
+    val nunitoregular = FontFamily (
+    Font(R.font.nunito)
+)
+
 
     /* Other default text styles to override
     titleLarge = TextStyle(
@@ -38,4 +44,3 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
     */
-)

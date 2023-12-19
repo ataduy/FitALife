@@ -14,6 +14,8 @@ drawable nutr_removebg_preview__1_
 drawable pp_default
 drawable run_removebg_preview
 drawable weight_removebg_preview
+font nunito
+font roboto
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
