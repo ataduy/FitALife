@@ -34,6 +34,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
@@ -50,6 +51,7 @@ import com.example.fitalife.R
 import com.example.fitalife.main.CommonProgressSpinner
 import com.example.fitalife.main.checkSignedIn
 import com.example.fitalife.ui.theme.robotoregular
+import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
 fun HomeScreen(navController: NavController, vm: AppViewModel) {
@@ -174,13 +176,13 @@ private fun HomeContent(
                     color = Color.White,
 
                     modifier = Modifier
-                        .padding(10.dp)
+                        .padding(20.dp)
+                        .align(Alignment.CenterHorizontally)
 
                 )
             }
 
-            Card(
-                modifier = Modifier
+            Card(modifier = Modifier
                     .padding(top = 30.dp, start = 8.dp, end = 8.dp)
                     .fillMaxWidth()
                     .size(183.dp)
@@ -189,16 +191,18 @@ private fun HomeContent(
                         color = Color(0xFFF5F5F5),
                         shape = RoundedCornerShape(size = 20.dp)
                     ),
-
                 colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
 
                 ) {
 
                 Image(
                     painter = painterResource(R.drawable.nopnog_removebg_preview),
-                    contentDescription = "No Pain No Gain"
+                    contentDescription = "No Pain No Gain",
+                    contentScale = ContentScale.FillBounds,
+                    modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
             }
+
 
             Card(
                 modifier = Modifier
