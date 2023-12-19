@@ -34,6 +34,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -48,6 +49,7 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.R
 import com.example.fitalife.main.CommonProgressSpinner
 import com.example.fitalife.main.checkSignedIn
+import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
 fun HomeScreen(navController: NavController, vm: AppViewModel) {
@@ -79,12 +81,14 @@ private fun HomeContent(
             HeaderContent(name = name)
 
             //Cards
-            Row(modifier = Modifier.fillMaxWidth().padding(top = 12.dp),
+            Row(modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 12.dp),
                 horizontalArrangement = Arrangement.SpaceBetween,) {
 
                 Card(
                     modifier = Modifier
-                        .clickable {  }
+                        .clickable { }
                         .padding(8.dp)
                         .size(75.dp)
                         .border(
@@ -105,7 +109,7 @@ private fun HomeContent(
 
                 Card(
                     modifier = Modifier
-                        .clickable {  }
+                        .clickable { }
                         .padding(8.dp)
                         .size(75.dp)
                         .border(
@@ -126,7 +130,7 @@ private fun HomeContent(
 
                 Card(
                     modifier = Modifier
-                        .clickable {  }
+                        .clickable { }
                         .padding(8.dp)
                         .size(75.dp)
                         .border(
@@ -146,6 +150,29 @@ private fun HomeContent(
                 }
 
 
+            }
+
+            Card(modifier = Modifier
+                .padding(8.dp)
+                .fillMaxWidth()
+                .size(150.dp)
+                .border(
+                    width = 2.dp,
+                    color = Color(0xFFF5F5F5),
+                    shape = RoundedCornerShape(size = 20.dp)
+                ),
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),) {
+                    
+                Text(text = "Embark on a transformative fitness journey with FIT A LIFE We're thrilled to be a part of your quest for a healthier, happier you.",
+                    fontSize = 20.sp,
+                    fontFamily = robotoregular,
+                    fontWeight = FontWeight(600),
+                    color = Color.White,
+
+                    modifier = Modifier
+                        .padding(10.dp)
+
+                )
             }
 
 

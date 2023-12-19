@@ -23,6 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -73,13 +74,15 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Signup",
-                            fontFamily = robotoregular)
+                        Text(text = "Sign up",
+                            fontFamily = robotoregular,
+                            fontWeight = FontWeight(600)
+                        )
                     }
 
                     Button(
                         onClick = {
-                            navigateTo(navContoller = navController, DestinationScreen.Login)
+                            navigateTo(navContoller = navController, DestinationScreen.Home)
 
                         },
                         modifier = Modifier
@@ -90,7 +93,9 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         shape = RoundedCornerShape(41.dp),
                     ) {
                         Text(text = "Login",
-                            fontFamily = robotoregular)
+                            fontFamily = robotoregular,
+                            fontWeight = FontWeight(600)
+                        )
                     }
                 }
 
