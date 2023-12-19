@@ -1135,6 +1135,8 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
+color ic_launcher_background_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1804,8 +1806,6 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
-drawable ic_launcher_background
-drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1832,7 +1832,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
-drawable nopnog_removebg_preview
+drawable nopnog__1_
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2466,6 +2466,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep

@@ -43,6 +43,7 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.ui.theme.robotoregular
+import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
 fun HomeScreen(navController: NavController, vm: AppViewModel) {
@@ -159,14 +160,22 @@ private fun HomeContent(
 
                 Card(
                     modifier = Modifier
-                        .padding(8.dp)
-                        .width(295.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 10.dp)
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                        .padding(20.dp)
+                        .align(Alignment.CenterHorizontally)
+
+                )
+            }
+
+            Card(modifier = Modifier
+                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                    .fillMaxWidth()
+                    .size(183.dp)
+                    .border(
+                        width = 2.dp,
+                        color = Color(0xFFF5F5F5),
+                        shape = RoundedCornerShape(size = 20.dp)
+                    ),
+                colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
                 ) {
                     Text(modifier = Modifier.padding(12.dp),
                         text = "Embark on a transformative fitness journey with FIT A LIFE " +
@@ -180,18 +189,27 @@ private fun HomeContent(
                         )
                     )
                 }
+                Image(
+                    painter = painterResource(R.drawable.nopnog__1_),
+                    contentDescription = "No Pain No Gain",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.align(Alignment.CenterHorizontally)
+                )
+            }
 
-                Card(
-                    modifier = Modifier
-                        .padding(8.dp)
-                        .width(295.dp)
-                        .height(183.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 10.dp)
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+
+            Card(
+                modifier = Modifier
+                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                    .fillMaxWidth()
+                    .size(150.dp)
+                    .border(
+                        width = 2.dp,
+                        color = Color(0xFFF5F5F5),
+                        shape = RoundedCornerShape(size = 20.dp)
+                    ),
+
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.banner),
