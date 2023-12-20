@@ -43,6 +43,8 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.R.*
 import com.example.fitalife.main.checkSignedIn
 import com.example.fitalife.main.navigateTo
+import com.example.fitalife.ui.theme.nunitoregular
+import com.example.fitalife.ui.theme.robotoregular
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -116,10 +118,10 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                 SpecialDivider()
 
                 Text(
-                    text = "Email Adress",
+                    text = "Email Address",
                     style = TextStyle(
                         fontSize = 20.sp,
-                        fontFamily = FontFamily.SansSerif,
+                        fontFamily = nunitoregular,
                         fontWeight = FontWeight(700),
                         color = Color(0xFFF5F5F5),
                         letterSpacing = 0.1.sp,
@@ -156,7 +158,7 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                     text = "Password",
                     style = TextStyle(
                         fontSize = 20.sp,
-                        fontFamily = FontFamily.SansSerif,
+                        fontFamily = nunitoregular,
                         fontWeight = FontWeight(700),
                         color = Color(0xFFF5F5F5),
                         letterSpacing = 0.1.sp,
@@ -191,7 +193,11 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                     ),
                     shape = RoundedCornerShape(30.dp),
                 ) {
-                    Text(text = "Continue", color = Color.Black)
+                    Text(text = "Continue",
+                        fontFamily = robotoregular,
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight(700)
+                        ,color = Color.Black)
                 }
                 Spacer(modifier = Modifier.height(20.dp))
 

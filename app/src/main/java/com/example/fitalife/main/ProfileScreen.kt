@@ -53,6 +53,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.R
+import com.example.fitalife.ui.theme.robotoregular
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -145,6 +146,8 @@ private fun ProfileContent(
                         Text(
                             text = "Sex",
                             style = TextStyle(
+                                fontFamily = robotoregular,
+                                
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight(500),
                                 color = Color(0xFFFFFFFF),
