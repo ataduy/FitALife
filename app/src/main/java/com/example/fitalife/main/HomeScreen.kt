@@ -43,7 +43,6 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.ui.theme.robotoregular
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
 fun HomeScreen(navController: NavController, vm: AppViewModel) {
@@ -78,7 +77,7 @@ private fun HomeContent(
             //Cards - 3
             Row(modifier = Modifier
                 .fillMaxWidth()
-                .padding(14.dp),
+                .padding(12.dp),
                 horizontalArrangement = Arrangement.SpaceBetween) {
 
                 Card(
@@ -118,7 +117,7 @@ private fun HomeContent(
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_run),
-                        contentDescription = "Dumbbell",
+                        contentDescription = "run",
                         modifier = Modifier
                             .padding(10.dp)
                             .fillMaxSize()
@@ -141,7 +140,7 @@ private fun HomeContent(
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_apple),
-                        contentDescription = "Dumbbell",
+                        contentDescription = "diet",
                         modifier = Modifier
                             .padding(10.dp)
                             .fillMaxSize()
@@ -150,24 +149,49 @@ private fun HomeContent(
 
 
             }
-            
-            // Welcome Text and Banner
-            Column(modifier = Modifier
-                .fillMaxWidth()
-                .padding(14.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+
+            // Body
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(start = 8.dp, end = 8.dp)
+            ){
+
 
                 Card(
                     modifier = Modifier
+                        .padding(top = 20.dp, start = 12.dp, end = 12.dp)
+                        .fillMaxWidth()
+                        .size(150.dp)
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFF5F5F5),
+                            shape = RoundedCornerShape(size = 20.dp)
+                        ),
+
+                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+
+                    ) {
+                    Text(modifier = Modifier
                         .padding(20.dp)
-                        .align(Alignment.CenterHorizontally)
+                        .align(Alignment.CenterHorizontally),
 
-                )
-            }
+                        text = "Embark on a transformative fitness journey with FIT A LIFE " +
+                                "We're thrilled to be a part of your quest for a healthier, happier you.",
+                        style = TextStyle(
+                            fontSize = 20.sp,
+                            fontFamily = robotoregular,
+                            fontWeight = FontWeight(600),
+                            color = Color.White,
+                            letterSpacing = 0.1.sp,
 
-            Card(modifier = Modifier
-                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                        )
+                    )
+                }
+
+                // Image Card
+                Card(modifier = Modifier
+                    .padding(top = 30.dp, start = 12.dp, end = 12.dp)
                     .fillMaxWidth()
                     .size(183.dp)
                     .border(
@@ -175,83 +199,60 @@ private fun HomeContent(
                         color = Color(0xFFF5F5F5),
                         shape = RoundedCornerShape(size = 20.dp)
                     ),
-                colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
+                    colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
                 ) {
-                    Text(modifier = Modifier.padding(12.dp),
-                        text = "Embark on a transformative fitness journey with FIT A LIFE " +
-                                "We're thrilled to be a part of your quest for a healthier, happier you.",
-                        style = TextStyle(
-                            fontSize = 20.sp,
-                            fontFamily = robotoregular,
-                            fontWeight = FontWeight(500),
-                            color = Color(0xFFFFFFFF),
-                            letterSpacing = 0.1.sp,
-                        )
-                    )
-                }
-                Image(
-                    painter = painterResource(R.drawable.nopnog__1_),
-                    contentDescription = "No Pain No Gain",
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier.align(Alignment.CenterHorizontally)
-                )
-            }
 
-
-            Card(
-                modifier = Modifier
-                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
-                    .fillMaxWidth()
-                    .size(150.dp)
-                    .border(
-                        width = 2.dp,
-                        color = Color(0xFFF5F5F5),
-                        shape = RoundedCornerShape(size = 20.dp)
-                    ),
-
-                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                ) {
                     Image(
-                        painter = painterResource(id = R.drawable.banner),
-                        contentDescription = "banner",
-                        contentScale = ContentScale.FillBounds,
-                        modifier = Modifier.fillMaxSize()
+                        painter = painterResource(R.drawable.ic_banner),
+                        contentDescription = "No Pain No Gain",
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier.align(Alignment.CenterHorizontally)
                     )
                 }
 
                 Card(
                     modifier = Modifier
-                        .padding(8.dp)
-                        .width(295.dp)
-                        .height(183.dp)
+                        .padding(top = 30.dp, start = 12.dp, end = 12.dp)
+                        .fillMaxWidth()
+                        .size(150.dp)
                         .border(
                             width = 2.dp,
                             color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 10.dp)
+                            shape = RoundedCornerShape(size = 20.dp)
                         ),
-                    colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
-                    ) {
-                    Text(modifier = Modifier.padding(12.dp),
-                        text = "......",
+                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                ) {
+                    Text(modifier = Modifier
+                        .padding(20.dp)
+                        .align(Alignment.CenterHorizontally),
+
+                        text = "----------------------------------------------------------------------" +
+                                "----------------------------------------------------------------------"+
+                        "------------------------------------------------------------------------------------",
                         style = TextStyle(
                             fontSize = 20.sp,
                             fontFamily = robotoregular,
-                            fontWeight = FontWeight(500),
-                            color = Color(0xFFFFFFFF),
+                            fontWeight = FontWeight(600),
+                            color = Color.White,
                             letterSpacing = 0.1.sp,
+                                         )
                         )
-                    )
                 }
 
-                
+
+
+
+            }
+
+            }
+
             }
 
 
         }
 
 
-    }
-}
+
 
 @Composable
 private fun HeaderContent(name: String) {

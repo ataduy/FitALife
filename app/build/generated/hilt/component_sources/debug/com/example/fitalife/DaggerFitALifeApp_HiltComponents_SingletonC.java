@@ -523,7 +523,7 @@ public final class DaggerFitALifeApp_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectFitALifeApp(FitALifeApp arg0) {
+    public void injectFitALifeApp(FitALifeApp fitALifeApp) {
     }
 
     @Override

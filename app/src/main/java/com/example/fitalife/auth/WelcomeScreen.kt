@@ -23,13 +23,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.main.navigateTo
+import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
 fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
@@ -72,12 +75,16 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Signup")
+                        Text(text = "Sign up",
+                            fontFamily = robotoregular,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight(600)
+                        )
                     }
 
                     Button(
                         onClick = {
-                            navigateTo(navController = navController, DestinationScreen.Login)
+                            navigateTo(navController = navController, DestinationScreen.Home)
 
                         },
                         modifier = Modifier
@@ -87,7 +94,11 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Login")
+                        Text(text = "Login",
+                            fontFamily = robotoregular,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight(600)
+                        )
                     }
                 }
 

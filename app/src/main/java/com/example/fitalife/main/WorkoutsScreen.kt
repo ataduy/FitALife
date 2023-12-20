@@ -31,6 +31,7 @@ import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.data.getPrograms
+import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
 fun WorkoutsScreen(navController: NavController, vm: AppViewModel) {
@@ -109,7 +110,8 @@ fun WorkoutCard(
             ) {
                 Text(text = workoutId,
                     style = TextStyle(
-                        fontSize = 20.sp,
+                        fontFamily = robotoregular,
+                        fontSize = 16.sp,
                         fontWeight = FontWeight(800),
                         color = Color(0xFFFFFFFF),
                         letterSpacing = 0.1.sp,
@@ -143,6 +145,7 @@ fun WorkoutCard(
                 Text(
                     text = workoutTitle,
                     style = TextStyle(
+                        fontFamily = robotoregular,
                         fontSize = 12.sp,
                         fontWeight = FontWeight(500),
                         color = Color(0xFFFFFFFF),
