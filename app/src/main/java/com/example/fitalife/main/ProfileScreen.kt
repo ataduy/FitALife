@@ -147,7 +147,6 @@ private fun ProfileContent(
                             text = "Sex",
                             style = TextStyle(
                                 fontFamily = robotoregular,
-                                
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight(500),
                                 color = Color(0xFFFFFFFF),
@@ -187,6 +186,7 @@ private fun ProfileContent(
                         Text(
                             text = "Weight",
                             style = TextStyle(
+                                fontFamily = robotoregular,
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight(500),
                                 color = Color(0xFFFFFFFF),
@@ -247,6 +247,7 @@ private fun ProfileContent(
                         Text(
                             text = "Height",
                             style = TextStyle(
+                                fontFamily = robotoregular,
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight(500),
                                 color = Color(0xFFFFFFFF),
@@ -307,6 +308,7 @@ private fun ProfileContent(
                         Text(
                             text = "Age",
                             style = TextStyle(
+                                fontFamily = robotoregular,
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight(500),
                                 color = Color(0xFFFFFFFF),
@@ -361,7 +363,7 @@ private fun ProfileContent(
                         containerColor = Color(0x34FFFFFF)
                     )
                 ) {
-                    Text(text = "Continue", color = Color.Black)
+                    Text(text = "Continue",fontFamily = robotoregular,color = Color.Black)
                 }
 
 
@@ -436,7 +438,7 @@ fun GenderSelector(
     onGenderChange: (String) -> Unit
 ) {
     var showDialog by remember { mutableStateOf(false) }
-    val genderOptions = listOf("male", "female")
+    val genderOptions = listOf("Male", "Female")
 
     OutlinedTextField(
         value = selectedGender,

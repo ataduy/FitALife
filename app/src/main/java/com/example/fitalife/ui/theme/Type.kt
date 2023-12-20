@@ -8,10 +8,17 @@ import com.example.fitalife.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
+val robotoregular = FontFamily (
+    Font(R.font.roboto)
+)
+val nunitoregular = FontFamily (
+    Font(R.font.nunito)
+)
+
 // Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = robotoregular,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
@@ -20,12 +27,7 @@ val Typography = Typography(
 
 
 )
-    val robotoregular = FontFamily (
-    Font(R.font.roboto)
-    )
-    val nunitoregular = FontFamily (
-    Font(R.font.nunito)
-)
+
 
 
     /* Other default text styles to override

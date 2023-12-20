@@ -1,5 +1,6 @@
 package com.example.fitalife.main
 
+import android.view.Gravity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -57,7 +58,7 @@ fun WorkoutDetailsScreen(navController: NavController, vm: AppViewModel, workout
             Text(
                 text = "Workout Program",
                 style = TextStyle(
-                    fontSize = 24.sp,
+                    fontSize = 20.sp,
                     fontFamily = robotoregular,
                     fontWeight = FontWeight(500),
                     color = Color(0xFFFFFFFF),
@@ -86,6 +87,7 @@ fun WorkoutDetailsScreen(navController: NavController, vm: AppViewModel, workout
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .size(295.dp)
                     .border(
                         width = 2.dp,
                         color = Color(0x599CABC2),
@@ -99,12 +101,14 @@ fun WorkoutDetailsScreen(navController: NavController, vm: AppViewModel, workout
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(20.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally
+                        horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
-                        Text(text = it.title, style = MaterialTheme.typography.bodyLarge, color = Color.White)
-                        Spacer(modifier = Modifier.height(10.dp))
+                        Text(text = it.title, style = MaterialTheme.typography.bodyLarge, color = Color.White,)
+                        Spacer(modifier = Modifier.height(50.dp))
                         it.description.split("\n").forEach { line ->
-                            Text(text = line, style = MaterialTheme.typography.bodyMedium, color = Color.White)
+                            Text(text = line, style = MaterialTheme.typography.bodyMedium, color = Color.White,
+                                modifier = Modifier.padding(start = 20.dp,bottom = 10.dp)
+                                    .align(Alignment.Start))
                         }
                     }
                 }
