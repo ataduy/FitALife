@@ -105,7 +105,9 @@ private fun HomeContent(
 
                 Card(
                     modifier = Modifier
-                        .clickable { }
+                        .clickable {
+                            navigateTo(navController = navController, dest = DestinationScreen.RunTime)
+                        }
                         .padding(8.dp)
                         .size(75.dp)
                         .border(
