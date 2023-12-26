@@ -4,7 +4,7 @@
             "outputFile": "com.example.fitalife.app-mergeDebugResources-77:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\4167a5287f07914d239694d3c7a4e247\\transformed\\navigation-ui-2.7.6\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/4167a5287f07914d239694d3c7a4e247/transformed/navigation-ui-2.7.6/res/values-en-rGB/values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,92 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\b77ef80ed5942dc734514112dc5f4d63\\transformed\\core-1.12.0\\res\\values-en-rGB\\values-en-rGB.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,352,451,555,658,774",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "146,248,347,446,550,653,769,870"
-                    },
-                    "to": {
-                        "startLines": "34,35,36,37,38,39,40,136",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3011,3107,3209,3308,3407,3511,3614,12131",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "3102,3204,3303,3402,3506,3609,3725,12227"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\081d20f417e39ec1a326bb1ee6e6c7b1\\transformed\\material3-1.0.0\\res\\values-en-rGB\\values-en-rGB.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,133,207",
-                        "endColumns": "77,73,75",
-                        "endOffsets": "128,202,278"
-                    },
-                    "to": {
-                        "startLines": "46,68,71",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "4196,6724,6950",
-                        "endColumns": "77,73,75",
-                        "endOffsets": "4269,6793,7021"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\61ad496154a410267c769f0dee9cdbe6\\transformed\\play-services-base-18.0.1\\res\\values-en-rGB\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "197,298,446,567,670,817,936,1048,1147,1302,1403,1551,1672,1814,1958,2017,2075",
-                        "endColumns": "100,147,120,102,146,118,111,98,154,100,147,120,141,143,58,57,74",
-                        "endOffsets": "297,445,566,669,816,935,1047,1146,1301,1402,1550,1671,1813,1957,2016,2074,2149"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,50,51,52,53,54,56,57,58,59,60,61,62,63,64",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4274,4379,4531,4656,4763,4914,5037,5153,5394,5553,5658,5810,5935,6081,6229,6292,6354",
-                        "endColumns": "104,151,124,106,150,122,115,102,158,104,151,124,145,147,62,61,78",
-                        "endOffsets": "4374,4526,4651,4758,4909,5032,5148,5251,5548,5653,5805,5930,6076,6224,6287,6349,6428"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\0fa7fbe2526a0ce8d3e695f709d8aa17\\transformed\\ui-release\\res\\values-en-rGB\\values-en-rGB.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,197,279,373,472,559,641,730,819,903,968,1032,1110,1192,1265,1342,1408",
-                        "endColumns": "91,81,93,98,86,81,88,88,83,64,63,77,81,72,76,65,120",
-                        "endOffsets": "192,274,368,467,554,636,725,814,898,963,1027,1105,1187,1260,1337,1403,1524"
-                    },
-                    "to": {
-                        "startLines": "44,45,66,67,69,77,78,127,128,129,130,132,133,135,137,138,139",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4022,4114,6531,6625,6798,7488,7570,11435,11524,11608,11673,11815,11893,12058,12232,12309,12375",
-                        "endColumns": "91,81,93,98,86,81,88,88,83,64,63,77,81,72,76,65,120",
-                        "endOffsets": "4109,4191,6620,6719,6880,7565,7654,11519,11603,11668,11732,11888,11970,12126,12304,12370,12491"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\ee275bc2b99ec11ca6369531fba21284\\transformed\\play-services-basement-18.1.0\\res\\values-en-rGB\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "199",
-                        "endColumns": "133",
-                        "endOffsets": "332"
-                    },
-                    "to": {
-                        "startLines": "55",
-                        "startColumns": "4",
-                        "startOffsets": "5256",
-                        "endColumns": "137",
-                        "endOffsets": "5389"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\9c40c0ce44902a2f5f55a914ea76cf01\\transformed\\material-1.4.0-beta01\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/9c40c0ce44902a2f5f55a914ea76cf01/transformed/material-1.4.0-beta01/res/values-en-rGB/values-en-rGB.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -125,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\249bb217fc1a333ecb606cde08829b68\\transformed\\appcompat-1.6.1\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/249bb217fc1a333ecb606cde08829b68/transformed/appcompat-1.6.1/res/values-en-rGB/values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -142,7 +57,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\4cd1a12bc3dd67e0c3663cf80730ad23\\transformed\\browser-1.4.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/081d20f417e39ec1a326bb1ee6e6c7b1/transformed/material3-1.0.0/res/values-en-rGB/values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,133,207",
+                        "endColumns": "77,73,75",
+                        "endOffsets": "128,202,278"
+                    },
+                    "to": {
+                        "startLines": "46,68,71",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "4196,6724,6950",
+                        "endColumns": "77,73,75",
+                        "endOffsets": "4269,6793,7021"
+                    }
+                },
+                {
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/4cd1a12bc3dd67e0c3663cf80730ad23/transformed/browser-1.4.0/res/values-en-rGB/values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -156,6 +88,74 @@
                         "startOffsets": "6433,7116,7213,7322",
                         "endColumns": "97,96,108,98",
                         "endOffsets": "6526,7208,7317,7416"
+                    }
+                },
+                {
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/b77ef80ed5942dc734514112dc5f4d63/transformed/core-1.12.0/res/values-en-rGB/values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,352,451,555,658,774",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "146,248,347,446,550,653,769,870"
+                    },
+                    "to": {
+                        "startLines": "34,35,36,37,38,39,40,136",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3011,3107,3209,3308,3407,3511,3614,12131",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "3102,3204,3303,3402,3506,3609,3725,12227"
+                    }
+                },
+                {
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/ee275bc2b99ec11ca6369531fba21284/transformed/play-services-basement-18.1.0/res/values-en-rGB/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "133",
+                        "endOffsets": "332"
+                    },
+                    "to": {
+                        "startLines": "55",
+                        "startColumns": "4",
+                        "startOffsets": "5256",
+                        "endColumns": "137",
+                        "endOffsets": "5389"
+                    }
+                },
+                {
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/0fa7fbe2526a0ce8d3e695f709d8aa17/transformed/ui-release/res/values-en-rGB/values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,197,279,373,472,559,641,730,819,903,968,1032,1110,1192,1265,1342,1408",
+                        "endColumns": "91,81,93,98,86,81,88,88,83,64,63,77,81,72,76,65,120",
+                        "endOffsets": "192,274,368,467,554,636,725,814,898,963,1027,1105,1187,1260,1337,1403,1524"
+                    },
+                    "to": {
+                        "startLines": "44,45,66,67,69,77,78,127,128,129,130,132,133,135,137,138,139",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4022,4114,6531,6625,6798,7488,7570,11435,11524,11608,11673,11815,11893,12058,12232,12309,12375",
+                        "endColumns": "91,81,93,98,86,81,88,88,83,64,63,77,81,72,76,65,120",
+                        "endOffsets": "4109,4191,6620,6719,6880,7565,7654,11519,11603,11668,11732,11888,11970,12126,12304,12370,12491"
+                    }
+                },
+                {
+                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/61ad496154a410267c769f0dee9cdbe6/transformed/play-services-base-18.0.1/res/values-en-rGB/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "197,298,446,567,670,817,936,1048,1147,1302,1403,1551,1672,1814,1958,2017,2075",
+                        "endColumns": "100,147,120,102,146,118,111,98,154,100,147,120,141,143,58,57,74",
+                        "endOffsets": "297,445,566,669,816,935,1047,1146,1301,1402,1550,1671,1813,1957,2016,2074,2149"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53,54,56,57,58,59,60,61,62,63,64",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4274,4379,4531,4656,4763,4914,5037,5153,5394,5553,5658,5810,5935,6081,6229,6292,6354",
+                        "endColumns": "104,151,124,106,150,122,115,102,158,104,151,124,145,147,62,61,78",
+                        "endOffsets": "4374,4526,4651,4758,4909,5032,5148,5251,5548,5653,5805,5930,6076,6224,6287,6349,6428"
                     }
                 }
             ]

@@ -1808,13 +1808,17 @@ drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable ic_cart
 drawable ic_clock_black_24dp
 drawable ic_dumbell
+drawable ic_home
 drawable ic_keyboard_black_24dp
+drawable ic_meal
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_note
 drawable ic_reject
 drawable ic_run
 drawable logo

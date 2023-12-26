@@ -13,7 +13,11 @@ drawable ic_accept
 drawable ic_apple
 drawable ic_arrow_left
 drawable ic_banner
+drawable ic_cart
 drawable ic_dumbell
+drawable ic_home
+drawable ic_meal
+drawable ic_note
 drawable ic_reject
 drawable ic_run
 drawable logo

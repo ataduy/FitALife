@@ -42,6 +42,8 @@ import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
+import com.example.fitalife.navigation.BottomNavigationItem
+import com.example.fitalife.navigation.BottomNavigationMenu
 import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
@@ -68,192 +70,186 @@ private fun HomeContent(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(12.dp)
         ) {
 
-            // Header
-            HeaderContent(name = name)
+            Column(modifier = Modifier
+                .padding(12.dp)
+                .weight(1f)) {
 
-            //Cards - 3
-            Row(modifier = Modifier
-                .fillMaxWidth()
-                .padding(12.dp),
-                horizontalArrangement = Arrangement.SpaceBetween) {
+                // Header
+                HeaderContent(name = name)
 
-                Card(
+                //Cards - 3
+                Row(
                     modifier = Modifier
-                        .clickable {
-                            navigateTo(navController = navController, dest = DestinationScreen.Workouts)
-                        }
-                        .padding(8.dp)
-                        .size(75.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 20.dp)
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.ic_dumbell),
-                        contentDescription = "Dumbbell",
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .fillMaxSize()
-                    )
-                }
-
-                Card(
-                    modifier = Modifier
-                        .clickable {
-                            navigateTo(navController = navController, dest = DestinationScreen.RunTime)
-                        }
-                        .padding(8.dp)
-                        .size(75.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 20.dp)
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.ic_run),
-                        contentDescription = "run",
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .fillMaxSize()
-                    )
-                }
-
-                Card(
-                    modifier = Modifier
-                        .clickable {
-                            navigateTo(navController = navController, DestinationScreen.Profile)
-                        }
-                        .padding(8.dp)
-                        .size(75.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 20.dp)
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.ic_apple),
-                        contentDescription = "diet",
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .fillMaxSize()
-                    )
-                }
-
-
-            }
-
-            // Body
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(start = 8.dp, end = 8.dp)
-            ){
-
-
-                Card(
-                    modifier = Modifier
-                        .padding(top = 20.dp, start = 12.dp, end = 12.dp)
                         .fillMaxWidth()
-                        .size(150.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 20.dp)
-                        ),
+                        .padding(12.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
 
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-
+                    Card(
+                        modifier = Modifier
+                            .clickable {
+                                navigateTo(
+                                    navController = navController,
+                                    dest = DestinationScreen.Workouts
+                                )
+                            }
+                            .padding(8.dp)
+                            .size(75.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color(0xFFF5F5F5),
+                                shape = RoundedCornerShape(size = 20.dp)
+                            ),
+                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                     ) {
-                    Text(modifier = Modifier
-                        .padding(20.dp)
-                        .align(Alignment.CenterHorizontally),
-
-                        text = "Embark on a transformative fitness journey with FIT A LIFE " +
-                                "We're thrilled to be a part of your quest for a healthier, happier you.",
-                        style = TextStyle(
-                            fontSize = 20.sp,
-                            fontFamily = robotoregular,
-                            fontWeight = FontWeight(600),
-                            color = Color.White,
-                            letterSpacing = 0.1.sp,
-
+                        Image(
+                            painter = painterResource(id = R.drawable.ic_dumbell),
+                            contentDescription = "Dumbbell",
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .fillMaxSize()
                         )
-                    )
+                    }
+
+                    Card(
+                        modifier = Modifier
+                            .clickable {
+                                navigateTo(
+                                    navController = navController,
+                                    dest = DestinationScreen.RunTime
+                                )
+                            }
+                            .padding(8.dp)
+                            .size(75.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color(0xFFF5F5F5),
+                                shape = RoundedCornerShape(size = 20.dp)
+                            ),
+                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.ic_run),
+                            contentDescription = "run",
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .fillMaxSize()
+                        )
+                    }
+
+                    Card(
+                        modifier = Modifier
+                            .clickable {
+                                navigateTo(navController = navController, DestinationScreen.Profile)
+                            }
+                            .padding(8.dp)
+                            .size(75.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color(0xFFF5F5F5),
+                                shape = RoundedCornerShape(size = 20.dp)
+                            ),
+                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.ic_apple),
+                            contentDescription = "diet",
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .fillMaxSize()
+                        )
+                    }
+
+
                 }
 
-                // Image Card
-                Card(modifier = Modifier
-                    .padding(top = 30.dp, start = 12.dp, end = 12.dp)
-                    .fillMaxWidth()
-                    .size(183.dp)
-                    .border(
-                        width = 2.dp,
-                        color = Color(0xFFF5F5F5),
-                        shape = RoundedCornerShape(size = 20.dp)
-                    ),
-                    colors = CardDefaults.cardColors(containerColor = Color(red = 156, green = 171, blue = 194, alpha = 35)),
-                ) {
-
-                    Image(
-                        painter = painterResource(R.drawable.ic_banner),
-                        contentDescription = "No Pain No Gain",
-                        contentScale = ContentScale.Crop,
-                        modifier = Modifier.align(Alignment.CenterHorizontally)
-                    )
-                }
-
-                Card(
+                // Body
+                Column(
                     modifier = Modifier
-                        .padding(top = 30.dp, start = 12.dp, end = 12.dp)
-                        .fillMaxWidth()
-                        .size(150.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = RoundedCornerShape(size = 20.dp)
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                        .fillMaxSize()
+                        .padding(start = 8.dp, end = 8.dp)
                 ) {
-                    Text(modifier = Modifier
-                        .padding(20.dp)
-                        .align(Alignment.CenterHorizontally),
 
-                        text = "----------------------------------------------------------------------" +
-                                "----------------------------------------------------------------------"+
-                        "------------------------------------------------------------------------------------",
-                        style = TextStyle(
-                            fontSize = 20.sp,
-                            fontFamily = robotoregular,
-                            fontWeight = FontWeight(600),
-                            color = Color.White,
-                            letterSpacing = 0.1.sp,
-                                         )
+
+                    Card(
+                        modifier = Modifier
+                            .padding(top = 20.dp, start = 12.dp, end = 12.dp)
+                            .fillMaxWidth()
+                            .size(150.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color(0xFFF5F5F5),
+                                shape = RoundedCornerShape(size = 20.dp)
+                            ),
+
+                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+
+                        ) {
+                        Text(
+                            modifier = Modifier
+                                .padding(20.dp)
+                                .align(Alignment.CenterHorizontally),
+
+                            text = "Embark on a transformative fitness journey with FIT A LIFE " +
+                                    "We're thrilled to be a part of your quest for a healthier, happier you.",
+                            style = TextStyle(
+                                fontSize = 20.sp,
+                                fontFamily = robotoregular,
+                                fontWeight = FontWeight(600),
+                                color = Color.White,
+                                letterSpacing = 0.1.sp,
+
+                                )
                         )
+                    }
+
+                    // Image Card
+                    Card(
+                        modifier = Modifier
+                            .padding(top = 30.dp, start = 12.dp, end = 12.dp)
+                            .fillMaxWidth()
+                            .size(183.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color(0xFFF5F5F5),
+                                shape = RoundedCornerShape(size = 20.dp)
+                            ),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(
+                                red = 156,
+                                green = 171,
+                                blue = 194,
+                                alpha = 35
+                            )
+                        ),
+                    ) {
+
+                        Image(
+                            painter = painterResource(R.drawable.ic_banner),
+                            contentDescription = "No Pain No Gain",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                        )
+                    }
+
+
                 }
 
-
-
-
             }
 
-            }
-
-            }
-
+            BottomNavigationMenu(
+                selectedItem = BottomNavigationItem.HOME,
+                navController = navController
+            )
 
         }
 
+    }
 
+
+}
 
 
 @Composable
