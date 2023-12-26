@@ -1858,6 +1858,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font nunito
+font nunitobold
 font roboto
 id ALT
 id BOTTOM_END

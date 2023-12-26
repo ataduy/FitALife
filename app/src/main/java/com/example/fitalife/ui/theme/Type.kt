@@ -14,6 +14,9 @@ val robotoregular = FontFamily (
 val nunitoregular = FontFamily (
     Font(R.font.nunito)
 )
+val nunitobold = FontFamily(
+    Font(R.font.nunitobold)
+)
 
 // Set of Material typography styles to start with
 val Typography = Typography(

@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -43,6 +44,9 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.R.*
 import com.example.fitalife.main.checkSignedIn
 import com.example.fitalife.main.navigateTo
+import com.example.fitalife.ui.theme.nunitobold
+import com.example.fitalife.ui.theme.nunitoregular
+import com.example.fitalife.ui.theme.robotoregular
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -67,7 +71,7 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
             // Branding
             Column(
                 modifier = Modifier
-                    .weight(1f)
+                    .weight(0.3f)
                     .fillMaxWidth(),
                 verticalArrangement = Arrangement.Top,
                 horizontalAlignment = Alignment.CenterHorizontally) {
@@ -83,19 +87,23 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                 )
             }
 
+                    // ToDo: Geçici UI Kısmı yapıldı. nameState ve surnameState eklenecek, usernameState = nameState + surnameState olacak
+
             // Auth Fields
             Column(modifier = Modifier
-                .weight(1.2f)
+                .weight(2f)
                 .fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
             ) {
 
                 OutlinedTextField(
                     value = emailState.value,
                     onValueChange = { emailState.value = it},
                     modifier = Modifier
-                        .padding(8.dp)
+                        .padding(20.dp)
                         .width(285.dp)
+                        .height(50.dp)
                         .border(
                             width = 2.dp,
                             color = Color(0xFFF5F5F5),
@@ -112,21 +120,19 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                     singleLine = true,
                 )
 
-                Spacer(modifier = Modifier.height(8.dp))
-                SpecialDivider()
 
                 Text(
-                    text = "Email Adress",
+                    text = "Name",
                     style = TextStyle(
                         fontSize = 20.sp,
-                        fontFamily = FontFamily.SansSerif,
-                        fontWeight = FontWeight(700),
+                        fontFamily = nunitobold,
+                        fontWeight = FontWeight(900),
                         color = Color(0xFFF5F5F5),
-                        letterSpacing = 0.1.sp,
+                        letterSpacing = 0.4.sp,
                     )
                 )
 
-                Spacer(modifier = Modifier.height(8.dp))
+
 
 
                 OutlinedTextField(
@@ -134,8 +140,82 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                     onValueChange = { passState.value = it},
                     visualTransformation = PasswordVisualTransformation(),
                     modifier = Modifier
-                        .padding(8.dp)
+                        .padding(20.dp)
                         .width(285.dp)
+                        .height(50.dp)
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFF5F5F5),
+                            shape = RoundedCornerShape(size = 10.dp)
+                        ),
+                    shape = RoundedCornerShape(10.dp),
+                    colors = TextFieldDefaults.textFieldColors(
+                        containerColor = Color(0xFF225555),
+                        cursorColor = Color.White,
+                        textColor = Color.White,
+                        focusedIndicatorColor = Color.Transparent,
+                        unfocusedIndicatorColor = Color.Transparent
+                    ),
+                    singleLine = true,
+                )
+
+                Text(
+                    text = "Surname",
+                    style = TextStyle(
+                        fontSize = 20.sp,
+                        fontFamily = nunitobold,
+                        fontWeight = FontWeight(900),
+                        color = Color(0xFFF5F5F5),
+                        letterSpacing = 0.4.sp,
+                    )
+                )
+
+                OutlinedTextField(
+                    value = emailState.value,
+                    onValueChange = { emailState.value = it},
+                    modifier = Modifier
+                        .padding(20.dp)
+                        .width(285.dp)
+                        .height(50.dp)
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFF5F5F5),
+                            shape = RoundedCornerShape(size = 10.dp)
+                        ),
+                    shape = RoundedCornerShape(10.dp),
+                    colors = TextFieldDefaults.textFieldColors(
+                        containerColor = Color(0xFF225555),
+                        cursorColor = Color.White,
+                        textColor = Color.White,
+                        focusedIndicatorColor = Color.Transparent,
+                        unfocusedIndicatorColor = Color.Transparent
+                    ),
+                    singleLine = true,
+                )
+
+
+                Text(
+                    text = "Email Address",
+                    style = TextStyle(
+                        fontSize = 20.sp,
+                        fontFamily = nunitobold,
+                        fontWeight = FontWeight(900),
+                        color = Color(0xFFF5F5F5),
+                        letterSpacing = 0.4.sp,
+                    )
+                )
+
+
+
+
+                OutlinedTextField(
+                    value = passState.value,
+                    onValueChange = { passState.value = it},
+                    visualTransformation = PasswordVisualTransformation(),
+                    modifier = Modifier
+                        .padding(20.dp)
+                        .width(285.dp)
+                        .height(50.dp)
                         .border(
                             width = 2.dp,
                             color = Color(0xFFF5F5F5),
@@ -156,25 +236,51 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                     text = "Password",
                     style = TextStyle(
                         fontSize = 20.sp,
-                        fontFamily = FontFamily.SansSerif,
-                        fontWeight = FontWeight(700),
+                        fontFamily = nunitobold,
+                        fontWeight = FontWeight(900),
                         color = Color(0xFFF5F5F5),
-                        letterSpacing = 0.1.sp,
+                        letterSpacing = 0.4.sp,
                     )
                 )
 
-                SpecialDivider()
-                SpecialDivider()
+
 
             }
 
             // Auth Button
-            Column(
+            Row(
                 modifier = Modifier
-                    .weight(0.8f)
+                    .weight(0.7f)
+                    .padding(top = 20.dp)
                     .fillMaxWidth(),
-                verticalArrangement = Arrangement.Bottom,
-                horizontalAlignment = Alignment.CenterHorizontally) {
+                horizontalArrangement = Arrangement.Center
+
+            ) {
+
+                Button(onClick = { /*TODO*/ },
+                    modifier = Modifier
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFFFFFFF),
+                            shape = RoundedCornerShape(size = 30.dp)
+                        )
+                        .width(130.dp)
+                        .height(60.dp)
+                        .background(
+                            color = Color.Transparent,
+                            shape = RoundedCornerShape(size = 30.dp)
+                        ),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color.Transparent)
+                ) {
+                    Text(text = "Cancel", color = Color.White,
+                        fontSize = 20.sp,
+                        fontFamily = robotoregular,
+                        fontWeight = FontWeight.ExtraBold)
+
+                }
+
+                Spacer(modifier = Modifier.width(10.dp))
 
                 Button(
                     onClick = {
@@ -186,15 +292,20 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                         )
                     },
                     modifier = Modifier
-                        .width(285.dp),
+                        .width(130.dp)
+                        .height(60.dp),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color.White
                     ),
                     shape = RoundedCornerShape(30.dp),
                 ) {
-                    Text(text = "Continue", color = Color.Black)
+                    Text(text = "Sign Up", color = Color.Black,
+                        fontSize = 20.sp,
+                        fontFamily = robotoregular,
+                        fontWeight = FontWeight.ExtraBold
+                    )
                 }
-                Spacer(modifier = Modifier.height(20.dp))
+
 
             }
 
@@ -206,15 +317,3 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
 
 }
 
-@Composable
-private fun SpecialDivider() {
-    Spacer(modifier = Modifier.height(10.dp))
-    Divider(
-        color = Color.LightGray,
-        thickness = 3.dp,
-        modifier = Modifier
-            .width(165.dp)
-            .background(color = Color(0xFFF5F5F5))
-    )
-    Spacer(modifier = Modifier.height(16.dp))
-}

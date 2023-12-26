@@ -6,8 +6,10 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -69,18 +71,21 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                             navigateTo(navController = navController, DestinationScreen.Signup)
                           },
                         modifier = Modifier
-                            .width(136.dp),
+                            .width(136.dp)
+                            .height(38.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = Color(0xFF225555)
                         ),
                         shape = RoundedCornerShape(41.dp),
                     ) {
-                        Text(text = "Sign up",
+                        Text(text = "Sign Up",
                             fontFamily = robotoregular,
                             fontSize = 16.sp,
                             fontWeight = FontWeight(600)
                         )
                     }
+
+                    Spacer(modifier = Modifier.height(7.dp))
 
                     Button(
                         onClick = {
@@ -88,7 +93,8 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
 
                         },
                         modifier = Modifier
-                            .width(136.dp),
+                            .width(136.dp)
+                            .height(38.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = Color(0xFF225555)
                         ),

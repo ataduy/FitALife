@@ -19,6 +19,7 @@ drawable ic_run
 drawable logo
 drawable pp_default
 font nunito
+font nunitobold
 font roboto
 mipmap ic_launcher
 mipmap ic_launcher_foreground
