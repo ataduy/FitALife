@@ -19,6 +19,10 @@ public final class AppViewModel extends androidx.lifecycle.ViewModel {
     private final androidx.compose.runtime.MutableState<com.example.fitalife.data.UserData> userData = null;
     @org.jetbrains.annotations.NotNull
     private final androidx.compose.runtime.MutableState<com.example.fitalife.data.Event<java.lang.String>> popupNotification = null;
+    
+    /**
+     * ************************ RUN TIME VIEWMODEL
+     */
     private long _currentTime = 0L;
     private java.util.List<java.lang.String> _laps;
     

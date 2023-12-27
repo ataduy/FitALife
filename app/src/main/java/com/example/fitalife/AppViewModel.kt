@@ -169,4 +169,38 @@ class AppViewModel @Inject constructor(
         popupNotification.value = Event(message)
     }
 
+
+    /************************** RUN TIME VIEWMODEL ******************************/
+
+    private var _currentTime = 0L
+    val currentTime: Long get() = _currentTime
+
+    private var _laps = listOf<String>()
+    val laps: List<String> get() = _laps
+    fun startTimer() {
+        _currentTime = System.currentTimeMillis()
+    }
+
+    fun stopTimer() {
+        _currentTime = 0L
+    }
+
+    fun updateTime(elapsedTime: Long) {
+        _currentTime = elapsedTime
+    }
+
+    fun formatTime(timeInMillis: Long): String {
+        val minutes = (timeInMillis / (1000 * 60)) % 60
+        val seconds = (timeInMillis / 1000) % 60
+        val milliseconds = timeInMillis % 100
+
+        return String.format(
+            "%02d:%02d,%02d",
+            minutes,
+            seconds,
+            milliseconds
+        )
+    }
+    /************************** RUN TIME VIEWMODEL ******************************/
+
 }

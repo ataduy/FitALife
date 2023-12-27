@@ -30,7 +30,7 @@
 21-->[androidx.core:core:1.12.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\b77ef80ed5942dc734514112dc5f4d63\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 22
 23    <application
-23-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:7:5-29:19
+23-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:7:5-30:19
 24        android:name="com.example.fitalife.FitALifeApp"
 24-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:8:9-36
 25        android:allowBackup="true"
@@ -55,299 +55,301 @@
 36        android:theme="@style/Theme.FitALife" >
 36-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:16:9-46
 37        <activity
-37-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:18:9-28:20
+37-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:18:9-29:20
 38            android:name="com.example.fitalife.MainActivity"
 38-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:19:13-41
-39            android:exported="true"
-39-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:20:13-36
-40            android:label="@string/app_name"
-40-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:21:13-45
-41            android:theme="@style/Theme.FitALife" >
-41-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:22:13-50
-42            <intent-filter>
-42-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:23:13-27:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:24:17-69
-43-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:24:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:26:17-77
-45-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:26:27-74
-46            </intent-filter>
-47        </activity>
-48
-49        <service
-49-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:9:9-15:19
-50            android:name="com.google.firebase.components.ComponentDiscoveryService"
-50-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:10:13-84
-51            android:directBootAware="true"
-51-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
-52            android:exported="false" >
-52-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:11:13-37
-53            <meta-data
-53-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:12:13-14:85
-54                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar"
-54-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:13:17-125
-55                android:value="com.google.firebase.components.ComponentRegistrar" />
-55-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:14:17-82
-56            <meta-data
-56-->[com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\cf4c9dcae49f01dc9c260087939ecc3e\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:12:13-14:85
-57                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
-57-->[com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\cf4c9dcae49f01dc9c260087939ecc3e\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:13:17-129
-58                android:value="com.google.firebase.components.ComponentRegistrar" />
-58-->[com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\cf4c9dcae49f01dc9c260087939ecc3e\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:14:17-82
-59            <meta-data
-59-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:17:13-19:85
-60                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-60-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:18:17-122
-61                android:value="com.google.firebase.components.ComponentRegistrar" />
-61-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:19:17-82
-62            <meta-data
-62-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:20:13-22:85
-63                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-63-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:21:17-111
-64                android:value="com.google.firebase.components.ComponentRegistrar" />
-64-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:22:17-82
-65            <meta-data
-65-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
-66                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
-66-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
-67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
-68            <meta-data
-68-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
-69                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-69-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
-70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
-71            <meta-data
-71-->[com.google.firebase:firebase-auth-ktx:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\891db6539b88527677ae26093ae6af62\transformed\firebase-auth-ktx-22.3.0\AndroidManifest.xml:11:13-13:85
-72                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
-72-->[com.google.firebase:firebase-auth-ktx:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\891db6539b88527677ae26093ae6af62\transformed\firebase-auth-ktx-22.3.0\AndroidManifest.xml:12:17-119
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-auth-ktx:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\891db6539b88527677ae26093ae6af62\transformed\firebase-auth-ktx-22.3.0\AndroidManifest.xml:13:17-82
-74            <meta-data
-74-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:25:13-27:85
-75                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
-75-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:26:17-120
-76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:27:17-82
-77            <meta-data
-77-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:28:13-30:85
-78                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
-78-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:29:17-117
-79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:30:17-82
-80            <meta-data
-80-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:69:13-71:85
-81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-81-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:70:17-109
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:71:17-82
-83            <meta-data
-83-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\4a6b829bfcfa7ef0df5bb45655050a0f\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-84                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-84-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\4a6b829bfcfa7ef0df5bb45655050a0f\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
-85                android:value="com.google.firebase.components.ComponentRegistrar" />
-85-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\4a6b829bfcfa7ef0df5bb45655050a0f\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
-86            <meta-data
-86-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-87                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-87-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
-88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
-89        </service>
-90
-91        <activity
-91-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:29:9-46:20
-92            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-92-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:30:13-80
-93            android:excludeFromRecents="true"
-93-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:31:13-46
-94            android:exported="true"
-94-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:32:13-36
-95            android:launchMode="singleTask"
-95-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:33:13-44
-96            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-96-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:34:13-72
-97            <intent-filter>
-97-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:35:13-45:29
-98                <action android:name="android.intent.action.VIEW" />
-98-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:17-69
-98-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:25-66
-99
-100                <category android:name="android.intent.category.DEFAULT" />
-100-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:17-76
-100-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:27-73
-101                <category android:name="android.intent.category.BROWSABLE" />
-101-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:17-78
-101-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:27-75
-102
-103                <data
-103-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:41:17-44:51
-104                    android:host="firebase.auth"
-104-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:42:21-49
-105                    android:path="/"
-105-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:43:21-37
-106                    android:scheme="genericidp" />
-106-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:44:21-48
-107            </intent-filter>
-108        </activity>
-109        <activity
-109-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:47:9-64:20
-110            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-110-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:48:13-79
-111            android:excludeFromRecents="true"
-111-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:49:13-46
-112            android:exported="true"
-112-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:50:13-36
-113            android:launchMode="singleTask"
-113-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:51:13-44
-114            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-114-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:52:13-72
-115            <intent-filter>
-115-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:53:13-63:29
-116                <action android:name="android.intent.action.VIEW" />
-116-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:17-69
-116-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:25-66
-117
-118                <category android:name="android.intent.category.DEFAULT" />
-118-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:17-76
-118-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:27-73
-119                <category android:name="android.intent.category.BROWSABLE" />
-119-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:17-78
-119-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:27-75
-120
-121                <data
-121-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:41:17-44:51
-122                    android:host="firebase.auth"
-122-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:42:21-49
-123                    android:path="/"
-123-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:43:21-37
-124                    android:scheme="recaptcha" />
-124-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:44:21-48
-125            </intent-filter>
-126        </activity>
-127        <activity
-127-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-128            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-128-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-129            android:exported="false"
-129-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-130            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-130-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-131
-132        <provider
-132-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
-133            android:name="com.google.firebase.provider.FirebaseInitProvider"
-133-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
-134            android:authorities="com.example.fitalife.firebaseinitprovider"
-134-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
-135            android:directBootAware="true"
-135-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
-136            android:exported="false"
-136-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
-137            android:initOrder="100" />
-137-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
-138
-139        <activity
-139-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\268335924961f3b482f91c10dec368ef\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
-140            android:name="androidx.activity.ComponentActivity"
-140-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\268335924961f3b482f91c10dec368ef\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
-141            android:exported="true" />
-141-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\268335924961f3b482f91c10dec368ef\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
-142        <activity
-142-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\d1dce3e26d9ab46d5a7ce4786e59ff5d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-143            android:name="androidx.compose.ui.tooling.PreviewActivity"
-143-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\d1dce3e26d9ab46d5a7ce4786e59ff5d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-144            android:exported="true" />
-144-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\d1dce3e26d9ab46d5a7ce4786e59ff5d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-145
-146        <provider
-146-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
-147            android:name="androidx.startup.InitializationProvider"
-147-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
-148            android:authorities="com.example.fitalife.androidx-startup"
-148-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
-149            android:exported="false" >
-149-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
-150            <meta-data
-150-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
-151                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-151-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
-152                android:value="androidx.startup" />
-152-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
-153            <meta-data
-153-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1715cafe18f007725627599f8e22abb1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-154                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-154-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1715cafe18f007725627599f8e22abb1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-155                android:value="androidx.startup" />
-155-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1715cafe18f007725627599f8e22abb1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-156            <meta-data
-156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-157                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-158                android:value="androidx.startup" />
-158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-159        </provider>
-160
-161        <uses-library
-161-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-162            android:name="androidx.window.extensions"
-162-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-163            android:required="false" />
-163-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-164        <uses-library
-164-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-165            android:name="androidx.window.sidecar"
-165-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-166            android:required="false" />
-166-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-167
-168        <meta-data
-168-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ee275bc2b99ec11ca6369531fba21284\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-169            android:name="com.google.android.gms.version"
-169-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ee275bc2b99ec11ca6369531fba21284\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-170            android:value="@integer/google_play_services_version" />
-170-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ee275bc2b99ec11ca6369531fba21284\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-171
-172        <receiver
-172-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-173            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-174            android:directBootAware="false"
-174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-175            android:enabled="true"
-175-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-176            android:exported="true"
-176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-177            android:permission="android.permission.DUMP" >
-177-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-178            <intent-filter>
-178-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-179                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-180            </intent-filter>
-181            <intent-filter>
-181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-182                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-183            </intent-filter>
-184            <intent-filter>
-184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-185                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-186            </intent-filter>
-187            <intent-filter>
-187-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-188                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-189            </intent-filter>
-190        </receiver>
-191    </application>
-192
-193</manifest>
+39            android:configChanges="orientation|keyboardHidden|screenSize"
+39-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:22:13-74
+40            android:exported="true"
+40-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:20:13-36
+41            android:label="@string/app_name"
+41-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:21:13-45
+42            android:theme="@style/Theme.FitALife" >
+42-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:23:13-50
+43            <intent-filter>
+43-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:24:13-28:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:25:17-69
+44-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:25:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:27:17-77
+46-->C:\Users\ARPENTAX\Documents\GitHub\FitALife\app\src\main\AndroidManifest.xml:27:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <service
+50-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:9:9-15:19
+51            android:name="com.google.firebase.components.ComponentDiscoveryService"
+51-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:10:13-84
+52            android:directBootAware="true"
+52-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+53            android:exported="false" >
+53-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:11:13-37
+54            <meta-data
+54-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:12:13-14:85
+55                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar"
+55-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:13:17-125
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\806bcda22d4e94af76a05412b2fed487\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:14:17-82
+57            <meta-data
+57-->[com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\cf4c9dcae49f01dc9c260087939ecc3e\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:12:13-14:85
+58                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+58-->[com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\cf4c9dcae49f01dc9c260087939ecc3e\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:13:17-129
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-firestore-ktx:24.9.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\cf4c9dcae49f01dc9c260087939ecc3e\transformed\firebase-firestore-ktx-24.9.1\AndroidManifest.xml:14:17-82
+60            <meta-data
+60-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:17:13-19:85
+61                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+61-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:18:17-122
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:19:17-82
+63            <meta-data
+63-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:20:13-22:85
+64                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+64-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:21:17-111
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-firestore:24.10.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6c44e1735986b8304cf9d72110236d39\transformed\firebase-firestore-24.10.0\AndroidManifest.xml:22:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
+67                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+67-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
+70                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+70-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6d33bb7c8f18bb5d5985d2201a99deba\transformed\firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-auth-ktx:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\891db6539b88527677ae26093ae6af62\transformed\firebase-auth-ktx-22.3.0\AndroidManifest.xml:11:13-13:85
+73                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+73-->[com.google.firebase:firebase-auth-ktx:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\891db6539b88527677ae26093ae6af62\transformed\firebase-auth-ktx-22.3.0\AndroidManifest.xml:12:17-119
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-auth-ktx:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\891db6539b88527677ae26093ae6af62\transformed\firebase-auth-ktx-22.3.0\AndroidManifest.xml:13:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:25:13-27:85
+76                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+76-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:26:17-120
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:27:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:28:13-30:85
+79                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+79-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:29:17-117
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ac19c1893e1629292393e02b4bf894f3\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:30:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:69:13-71:85
+82                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+82-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:70:17-109
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:71:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\4a6b829bfcfa7ef0df5bb45655050a0f\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+85                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+85-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\4a6b829bfcfa7ef0df5bb45655050a0f\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\4a6b829bfcfa7ef0df5bb45655050a0f\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+88                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+88-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+90        </service>
+91
+92        <activity
+92-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:29:9-46:20
+93            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+93-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:30:13-80
+94            android:excludeFromRecents="true"
+94-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:31:13-46
+95            android:exported="true"
+95-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:32:13-36
+96            android:launchMode="singleTask"
+96-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:33:13-44
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+97-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:34:13-72
+98            <intent-filter>
+98-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:35:13-45:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:17-69
+99-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:17-76
+101-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:17-78
+102-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:27-75
+103
+104                <data
+104-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:41:17-44:51
+105                    android:host="firebase.auth"
+105-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:42:21-49
+106                    android:path="/"
+106-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:43:21-37
+107                    android:scheme="genericidp" />
+107-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:44:21-48
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:47:9-64:20
+111            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+111-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:48:13-79
+112            android:excludeFromRecents="true"
+112-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:49:13-46
+113            android:exported="true"
+113-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:50:13-36
+114            android:launchMode="singleTask"
+114-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:51:13-44
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+115-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:52:13-72
+116            <intent-filter>
+116-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:53:13-63:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:17-69
+117-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:36:25-66
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:17-76
+119-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:38:27-73
+120                <category android:name="android.intent.category.BROWSABLE" />
+120-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:17-78
+120-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:39:27-75
+121
+122                <data
+122-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:41:17-44:51
+123                    android:host="firebase.auth"
+123-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:42:21-49
+124                    android:path="/"
+124-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:43:21-37
+125                    android:scheme="recaptcha" />
+125-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\234d70216fa7b66d2173409174d5d7ca\transformed\firebase-auth-22.3.0\AndroidManifest.xml:44:21-48
+126            </intent-filter>
+127        </activity>
+128        <activity
+128-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+129-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+130            android:exported="false"
+130-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+131-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\61ad496154a410267c769f0dee9cdbe6\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+132
+133        <provider
+133-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+134            android:name="com.google.firebase.provider.FirebaseInitProvider"
+134-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+135            android:authorities="com.example.fitalife.firebaseinitprovider"
+135-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+136            android:directBootAware="true"
+136-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+137            android:exported="false"
+137-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+138            android:initOrder="100" />
+138-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\e05faa2fdd595fd42ccf7b5a420f2a67\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+139
+140        <activity
+140-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\268335924961f3b482f91c10dec368ef\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
+141            android:name="androidx.activity.ComponentActivity"
+141-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\268335924961f3b482f91c10dec368ef\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
+142            android:exported="true" />
+142-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\268335924961f3b482f91c10dec368ef\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
+143        <activity
+143-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\d1dce3e26d9ab46d5a7ce4786e59ff5d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+144            android:name="androidx.compose.ui.tooling.PreviewActivity"
+144-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\d1dce3e26d9ab46d5a7ce4786e59ff5d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+145            android:exported="true" />
+145-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\ARPENTAX\.gradle\caches\transforms-3\d1dce3e26d9ab46d5a7ce4786e59ff5d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+146
+147        <provider
+147-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+148            android:name="androidx.startup.InitializationProvider"
+148-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+149            android:authorities="com.example.fitalife.androidx-startup"
+149-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+150            android:exported="false" >
+150-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+151            <meta-data
+151-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+152                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+152-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+153                android:value="androidx.startup" />
+153-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\8ec41e8cfc82c6bb72ef2e8092bdff35\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+154            <meta-data
+154-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1715cafe18f007725627599f8e22abb1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+155                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+155-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1715cafe18f007725627599f8e22abb1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+156                android:value="androidx.startup" />
+156-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1715cafe18f007725627599f8e22abb1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+157            <meta-data
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+159                android:value="androidx.startup" />
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+160        </provider>
+161
+162        <uses-library
+162-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+163            android:name="androidx.window.extensions"
+163-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+164            android:required="false" />
+164-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+165        <uses-library
+165-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+166            android:name="androidx.window.sidecar"
+166-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+167            android:required="false" />
+167-->[androidx.window:window:1.0.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\1c7082b6de71bf3b1c27500c53605edb\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+168
+169        <meta-data
+169-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ee275bc2b99ec11ca6369531fba21284\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+170            android:name="com.google.android.gms.version"
+170-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ee275bc2b99ec11ca6369531fba21284\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+171            android:value="@integer/google_play_services_version" />
+171-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ARPENTAX\.gradle\caches\transforms-3\ee275bc2b99ec11ca6369531fba21284\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+172
+173        <receiver
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+174            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+175            android:directBootAware="false"
+175-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+176            android:enabled="true"
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+177            android:exported="true"
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+178            android:permission="android.permission.DUMP" >
+178-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+179            <intent-filter>
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+180                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+181            </intent-filter>
+182            <intent-filter>
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+183                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+184            </intent-filter>
+185            <intent-filter>
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+186                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+187            </intent-filter>
+188            <intent-filter>
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+189                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ARPENTAX\.gradle\caches\transforms-3\6dbe81e22ca09cecb66f115b645c0a6a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+190            </intent-filter>
+191        </receiver>
+192    </application>
+193
+194</manifest>
