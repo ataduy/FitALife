@@ -179,6 +179,7 @@ class AppViewModel @Inject constructor(
     val laps: List<String> get() = _laps
     fun startTimer() {
         _currentTime = System.currentTimeMillis()
+
     }
 
     fun stopTimer() {

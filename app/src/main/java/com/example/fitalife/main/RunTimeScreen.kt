@@ -9,9 +9,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -29,15 +27,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.ui.theme.nunitobold
-import com.example.fitalife.ui.theme.nunitoregular
 import com.example.fitalife.ui.theme.robotoregular
-import java.sql.Time
 
 
 @Composable
@@ -90,6 +85,7 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
 
             Column(
                 modifier = Modifier
+                    .weight(1.7f)
                     .fillMaxSize()
                     .padding(top = 240.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
@@ -105,17 +101,19 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
                     letterSpacing = 1.sp,
                 )
 
-                Spacer(modifier = Modifier.height(100.dp))
-
                 Row(
                     modifier = Modifier
-                        .padding(top = 0.dp, start = 24.dp, bottom = 5.dp, end = 24.dp),
+                        .weight(0.5f)
+                        .padding(24.dp),
                     horizontalArrangement = Arrangement.Center,
                 ) {
                     // LAP
                     OutlinedButton(
                         onClick = {
-                            laps += vm.formatTime(currentTime)
+                           if(laps.size < 10) {laps += vm.formatTime(currentTime)}
+                            else{
+                               vm.handleException(customMessage = "Maximum lap limit reached!")
+                           }
                         },
                         modifier = Modifier
                             .width(130.dp)
@@ -144,6 +142,7 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
                         onClick = {isRunning = !isRunning
                             if (isRunning) {
                                 vm.startTimer()
+                                laps = mutableListOf()
                             } else {
                                 vm.stopTimer()
                             }
@@ -168,7 +167,7 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
 
                 }
 
-                Column(modifier = Modifier.padding(top = 16.dp)) {
+                Column(modifier = Modifier.padding(top = 16.dp).weight(1.8f)) {
                     laps.forEachIndexed { index, lapTime ->
                         Text(text = "Lap ${index + 1}: $lapTime", fontFamily = nunitobold,
                             fontSize = 16.sp ,
