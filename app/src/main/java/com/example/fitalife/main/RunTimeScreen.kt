@@ -46,20 +46,6 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
     )  {
 
         var isRunning by remember { mutableStateOf(false) }
-        var currentTime by remember { mutableStateOf(0L) }
-        var laps by remember { mutableStateOf(listOf<String>()) }
-
-        LaunchedEffect(isRunning) {
-            if (isRunning) {
-                val startTime = System.currentTimeMillis()
-                while (isRunning) {
-                    val elapsedTime = System.currentTimeMillis() - startTime
-                    currentTime = elapsedTime
-                    vm.updateTime(elapsedTime) // Update time in the ViewModel
-                    kotlinx.coroutines.delay(10) // Update every 10 milliseconds
-                }
-            }
-        }
 
         Spacer(modifier = Modifier.height(51.dp))
         Column(
@@ -109,7 +95,7 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
             ) {
                 // LAP
                OutlinedButton(
-                   onClick = { /*TODO*/laps += vm.formatTime(currentTime) },
+                   onClick = { /*TODO*/},
                    modifier = Modifier
                        .width(130.dp)
                        .height(60.dp)
