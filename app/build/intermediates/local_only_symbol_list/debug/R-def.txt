@@ -9,6 +9,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable frame_hexagon
 drawable ic_accept
 drawable ic_apple
 drawable ic_arrow_left
@@ -16,10 +17,18 @@ drawable ic_banner
 drawable ic_cart
 drawable ic_dumbell
 drawable ic_home
+drawable ic_keto
+drawable ic_lowcarb
 drawable ic_meal
+drawable ic_mediterranean
+drawable ic_no_sugar
 drawable ic_note
+drawable ic_paleo
+drawable ic_raw_diet
 drawable ic_reject
 drawable ic_run
+drawable ic_vegan
+drawable ig_vegetarian
 drawable logo
 drawable pp_default
 font nunito

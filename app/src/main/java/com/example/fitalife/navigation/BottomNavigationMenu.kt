@@ -32,7 +32,7 @@ import com.example.fitalife.main.navigateTo
 enum class BottomNavigationItem(val icon: Int, val navDestination: DestinationScreen) {
     HOME(R.drawable.ic_home, DestinationScreen.Home),
     NOTE(R.drawable.ic_note, DestinationScreen.Home),
-    MEAL(R.drawable.ic_meal, DestinationScreen.Home),
+    DIET(R.drawable.ic_meal, DestinationScreen.Diet),
     CART(R.drawable.ic_cart, DestinationScreen.Home),
 }
 
