@@ -19,6 +19,11 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -39,6 +44,23 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
         modifier = Modifier.fillMaxSize(),
         color = Color(0xFF225555)
     )  {
+
+        var isRunning by remember { mutableStateOf(false) }
+        var currentTime by remember { mutableStateOf(0L) }
+        var laps by remember { mutableStateOf(listOf<String>()) }
+
+        LaunchedEffect(isRunning) {
+            if (isRunning) {
+                val startTime = System.currentTimeMillis()
+                while (isRunning) {
+                    val elapsedTime = System.currentTimeMillis() - startTime
+                    currentTime = elapsedTime
+                    vm.updateTime(elapsedTime) // Update time in the ViewModel
+                    kotlinx.coroutines.delay(10) // Update every 10 milliseconds
+                }
+            }
+        }
+
         Spacer(modifier = Modifier.height(51.dp))
         Column(
             modifier = Modifier
@@ -87,7 +109,7 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
             ) {
                 // LAP
                OutlinedButton(
-                   onClick = { /*TODO*/ },
+                   onClick = { /*TODO*/laps += vm.formatTime(currentTime) },
                    modifier = Modifier
                        .width(130.dp)
                        .height(60.dp)
@@ -120,7 +142,7 @@ fun RunTimeScreen(navController: NavController, vm:AppViewModel){
                     ),
                     shape = RoundedCornerShape(41.dp),
                 ) {
-                    Text(text = "Start",
+                    Text(text = if (isRunning) "Stop" else "Start",
                         color = Color.Black,
                         fontFamily = robotoregular,
                         fontSize = 16.sp
