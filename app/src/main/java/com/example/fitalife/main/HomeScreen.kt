@@ -177,11 +177,11 @@ private fun HomeContent(
                         modifier = Modifier
                             .padding(top = 20.dp, start = 12.dp, end = 12.dp)
                             .fillMaxWidth()
-                            .size(150.dp)
+                            .size(250.dp)
                             .border(
                                 width = 2.dp,
                                 color = Color(0xFFF5F5F5),
-                                shape = RoundedCornerShape(size = 20.dp)
+                                shape = RoundedCornerShape(size = 10.dp)
                             ),
 
                         colors = CardDefaults.cardColors(containerColor = Color.Transparent),
@@ -192,8 +192,7 @@ private fun HomeContent(
                                 .padding(20.dp)
                                 .align(Alignment.CenterHorizontally),
 
-                            text = "Embark on a transformative fitness journey with FIT A LIFE " +
-                                    "We're thrilled to be a part of your quest for a healthier, happier you.",
+                            text = " " ,
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontFamily = robotoregular,
@@ -214,7 +213,7 @@ private fun HomeContent(
                             .border(
                                 width = 2.dp,
                                 color = Color(0xFFF5F5F5),
-                                shape = RoundedCornerShape(size = 20.dp)
+                                shape = RoundedCornerShape(size = 10.dp)
                             ),
                         colors = CardDefaults.cardColors(
                             containerColor = Color(
@@ -278,7 +277,7 @@ private fun HeaderContent(name: String) {
                     contentDescription = "Profile Pic",
                     modifier = Modifier
                         .clip(CircleShape)
-                        .width(60.dp)
+                        .width(45.dp)
                 )
             }
         }
@@ -311,7 +310,7 @@ private fun HeaderContent(name: String) {
                 color = Color(0xFFF5F5F5),
                 style = TextStyle(
                     fontSize = 16.sp,
-                    fontFamily = FontFamily.SansSerif,
+                    fontFamily = robotoregular,
                     fontWeight = FontWeight(500),
                     letterSpacing = 0.1.sp
                 )

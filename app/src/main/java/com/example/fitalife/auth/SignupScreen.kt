@@ -257,7 +257,7 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
 
             ) {
 
-                Button(onClick = { /*TODO*/ },
+                Button(onClick = { navController.popBackStack() },
                     modifier = Modifier
                         .border(
                             width = 2.dp,
@@ -280,7 +280,7 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
 
                 }
 
-                Spacer(modifier = Modifier.width(10.dp))
+                Spacer(modifier = Modifier.width(20.dp))
 
                 Button(
                     onClick = {

@@ -113,7 +113,7 @@ fun WorkoutCard(
                         fontFamily = robotoregular,
                         fontSize = 16.sp,
                         fontWeight = FontWeight(800),
-                        color = Color(0xFFFFFFFF),
+                        color = Color(red = 219, green = 255,blue = 0),
                         letterSpacing = 0.1.sp,
                     ))
             }

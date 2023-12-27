@@ -61,7 +61,7 @@ fun WorkoutDetailsScreen(navController: NavController, vm: AppViewModel, workout
                     fontSize = 20.sp,
                     fontFamily = robotoregular,
                     fontWeight = FontWeight(500),
-                    color = Color(0xFFFFFFFF),
+                    color = Color.White,
 
                     letterSpacing = 0.1.sp,
                 )
@@ -75,7 +75,7 @@ fun WorkoutDetailsScreen(navController: NavController, vm: AppViewModel, workout
                     fontSize = 48.sp,
                     fontFamily = robotoregular,
                     fontWeight = FontWeight(500),
-                    color = Color(0xFFFFFFFF),
+                    color = Color(red = 219, green = 255,blue = 0),
                     letterSpacing = 0.1.sp,
                 )
             )
@@ -103,10 +103,10 @@ fun WorkoutDetailsScreen(navController: NavController, vm: AppViewModel, workout
                             .padding(20.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
-                        Text(text = it.title, style = MaterialTheme.typography.bodyLarge, color = Color.White,)
-                        Spacer(modifier = Modifier.height(50.dp))
+                        Text(text = it.title, fontSize = 18.sp, fontFamily = robotoregular, color = Color.White)
+                        Spacer(modifier = Modifier.height(30.dp))
                         it.description.split("\n").forEach { line ->
-                            Text(text = line, style = MaterialTheme.typography.bodyMedium, color = Color.White,
+                            Text(text = line, fontSize = 16.sp, fontFamily = robotoregular, color = Color.White,
                                 modifier = Modifier.padding(start = 20.dp,bottom = 10.dp)
                                     .align(Alignment.Start))
                         }

@@ -34,6 +34,7 @@ import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.main.navigateTo
+import com.example.fitalife.ui.theme.nunitobold
 import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
@@ -51,8 +52,17 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
                     .fillMaxWidth(),
                 contentAlignment = Alignment.Center
             ) {
-                Image(painter = painterResource(id = R.drawable.logo),
-                    contentDescription = "Logo")
+                Column {
+                    Image(painter = painterResource(id = R.drawable.logo),
+                        contentDescription = "Logo")
+
+                Spacer(modifier = Modifier.height(15.dp))
+                    
+                    Text(text = "Fit a Life", fontSize = 20.sp, fontFamily = nunitobold,color = Color.White)
+                }
+
+                
+
             }
 
 

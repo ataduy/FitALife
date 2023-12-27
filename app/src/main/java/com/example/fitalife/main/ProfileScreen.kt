@@ -354,7 +354,7 @@ private fun ProfileContent(
                             shape = RoundedCornerShape(size = 30.dp)
                         )
                         .width(255.dp)
-                        .height(50.dp)
+                        .height(60.dp)
                         .background(
                             color = Color(0x599CABC2),
                             shape = RoundedCornerShape(size = 30.dp)
@@ -363,7 +363,8 @@ private fun ProfileContent(
                         containerColor = Color(0x34FFFFFF)
                     )
                 ) {
-                    Text(text = "Continue",fontFamily = robotoregular,color = Color.Black)
+                    Text(text = "Continue",fontFamily = robotoregular,color = Color.White,
+                        fontSize = 24.sp)
                 }
 
 
@@ -389,7 +390,7 @@ private fun Header(navController: NavController) {
             modifier = Modifier
                 .clickable { navController.popBackStack() }
                 .padding(8.dp)
-                .size(50.dp)
+                .size(45.dp)
                 .border(
                     width = 2.dp,
                     color = Color(0xFFF5F5F5),
@@ -410,7 +411,7 @@ private fun Header(navController: NavController) {
         Card(
             modifier = Modifier
                 .padding(8.dp)
-                .size(50.dp)
+                .size(45.dp)
                 .border(
                     width = 2.dp,
                     color = Color(0xFFF5F5F5),
@@ -422,7 +423,7 @@ private fun Header(navController: NavController) {
                 painter = painterResource(id = R.drawable.logo),
                 contentDescription = "Logo",
                 modifier = Modifier
-                    .padding(10.dp)
+                    .padding(5.dp)
                     .fillMaxSize()
                     .clip(CircleShape)
             )
