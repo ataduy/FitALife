@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -36,14 +37,15 @@ import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.R
 import com.example.fitalife.data.WorkoutsPrograms
+import com.example.fitalife.data.getDiets
 import com.example.fitalife.data.getPrograms
 import com.example.fitalife.ui.theme.robotoregular
 
 @Composable
-fun DietDetailsScreen(navController: NavController, vm: AppViewModel, workoutId: String) {
+fun DietDetailsScreen(navController: NavController, vm: AppViewModel, dietId: String) {
 
-    val listOfWorkouts = getPrograms()
-    val workout = listOfWorkouts.find { it.id == workoutId }
+    val listOfDiets = getDiets()
+    val diet = listOfDiets.find { it.id == dietId }
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -56,21 +58,7 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, workoutId:
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Workout Program",
-                style = TextStyle(
-                    fontSize = 20.sp,
-                    fontFamily = robotoregular,
-                    fontWeight = FontWeight(500),
-                    color = Color.White,
-
-                    letterSpacing = 0.1.sp,
-                )
-            )
-            
-            Spacer(modifier = Modifier.height(14.dp))
-            
-            Text(
-                text = workoutId,
+                text = "${diet!!.title} Diet",
                 style = TextStyle(
                     fontSize = 48.sp,
                     fontFamily = robotoregular,
@@ -87,7 +75,7 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, workoutId:
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .size(295.dp)
+                    .wrapContentHeight()
                     .border(
                         width = 2.dp,
                         color = Color(0x599CABC2),
@@ -96,25 +84,27 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, workoutId:
                 shape = RoundedCornerShape(size = 40.dp),
                 colors = CardDefaults.cardColors(Color(0x599CABC2)),
             ) {
-                workout?.let {
+                diet?.let {
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(20.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
-                        Text(text = it.title, fontSize = 18.sp, fontFamily = robotoregular, color = Color.White)
                         Spacer(modifier = Modifier.height(30.dp))
                         it.description.split("\n").forEach { line ->
                             Text(text = line, fontSize = 16.sp, fontFamily = robotoregular, color = Color.White,
-                                modifier = Modifier.padding(start = 20.dp,bottom = 10.dp)
+                                modifier = Modifier
+                                    .padding(start = 20.dp, bottom = 10.dp)
                                     .align(Alignment.Start))
                         }
                     }
                 }
             }
             Row(
-                modifier = Modifier.fillMaxWidth().padding(top = 50.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 50.dp),
                 horizontalArrangement = Arrangement.SpaceAround
             ) {
 
@@ -132,31 +122,8 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, workoutId:
                     colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.ic_reject),
+                        painter = painterResource(id = R.drawable.ic_arrow_left),
                         contentDescription = "arrow left",
-                        modifier = Modifier
-                            .padding(10.dp)
-                            .fillMaxSize()
-                            .clip(CircleShape)
-                    )
-                }
-
-                // Accept
-                Card(
-                    modifier = Modifier
-                        .clickable { /* TODO */ }
-                        .padding(8.dp)
-                        .size(45.dp)
-                        .border(
-                            width = 2.dp,
-                            color = Color(0xFFF5F5F5),
-                            shape = CircleShape
-                        ),
-                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.ic_accept),
-                        contentDescription = "check",
                         modifier = Modifier
                             .padding(10.dp)
                             .fillMaxSize()

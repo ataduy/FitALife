@@ -17,6 +17,7 @@ import androidx.navigation.navArgument
 import com.example.fitalife.auth.LoginScreen
 import com.example.fitalife.auth.SignupScreen
 import com.example.fitalife.auth.WelcomeScreen
+import com.example.fitalife.main.DietDetailsScreen
 import com.example.fitalife.main.DietScreen
 import com.example.fitalife.main.HomeScreen
 import com.example.fitalife.main.NotificationMessage
@@ -55,6 +56,7 @@ sealed class DestinationScreen(val route: String) {
     object WorkoutDetails: DestinationScreen("workout-details/{workoutId}")
     object RunTime: DestinationScreen("runtime")
     object Diet: DestinationScreen("diet")
+    object DietDetails: DestinationScreen("diet-details/{dietId}")
 }
 
 @Composable
@@ -94,6 +96,12 @@ fun FitALife() {
         }
         composable(route = DestinationScreen.Diet.route) {
             DietScreen(navController = navController, vm = vm)
+        }
+        composable(route = DestinationScreen.DietDetails.route,
+            arguments = listOf(navArgument("dietId") { type = NavType.StringType })
+        ) { backStackEntry ->
+            DietDetailsScreen(navController = navController, vm = vm,
+                dietId = backStackEntry.arguments?.getString("dietId") ?: "")
         }
     }
 }

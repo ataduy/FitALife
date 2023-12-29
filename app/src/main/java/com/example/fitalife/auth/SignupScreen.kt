@@ -74,11 +74,6 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                 .fillMaxSize()
         ) {
 
-            Text(
-                text = "Username: ${usernameState.value}",
-                // Text stilinizi burada belirleyebilirsiniz.
-            )
-
             // Branding
             Column(
                 modifier = Modifier
