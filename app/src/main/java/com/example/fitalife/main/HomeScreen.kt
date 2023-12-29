@@ -54,15 +54,17 @@ fun HomeScreen(navController: NavController, vm: AppViewModel) {
         CommonProgressSpinner()
     } else {
         val userData = vm.userData.value
-        var username by rememberSaveable { mutableStateOf(userData?.username ?: "") }
+        var name by rememberSaveable { mutableStateOf(userData?.name ?: "") }
+        var surname by rememberSaveable { mutableStateOf(userData?.surname ?: "") }
 
-        HomeContent(name = username, navController = navController)
+        HomeContent(name = name, surname = surname, navController = navController)
     }
 }
 
 @Composable
 private fun HomeContent(
     name: String,
+    surname: String,
     navController: NavController
 ) {
     Surface(modifier = Modifier.fillMaxSize(), color = Color(0xFF225555)) {
@@ -77,7 +79,7 @@ private fun HomeContent(
                 .weight(1f)) {
 
                 // Header
-                HeaderContent(name = name)
+                HeaderContent(name = name, surname = surname)
 
                 //Cards - 3
                 Row(
@@ -252,12 +254,9 @@ private fun HomeContent(
 
 
 @Composable
-private fun HeaderContent(name: String) {
+private fun HeaderContent(name: String, surname: String) {
 
-    val formattedName = name.split(' ').mapIndexed { index, s ->
-        if (index == 0) s.replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() }
-        else s.uppercase()
-    }.joinToString(" ")
+    val fullName = "$name $surname"
 
     Row(
         Modifier
@@ -285,7 +284,7 @@ private fun HeaderContent(name: String) {
         // Name
         Column() {
             Text(
-                text = formattedName,
+                text = fullName,
                 modifier = Modifier.padding(bottom = 10.dp),
                 color = Color(0xFFF5F5F5),
                 style = TextStyle(

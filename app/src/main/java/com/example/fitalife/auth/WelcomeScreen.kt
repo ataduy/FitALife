@@ -99,8 +99,7 @@ fun WelcomeScreen(navController: NavController, vm: AppViewModel) {
 
                     Button(
                         onClick = {
-                            navigateTo(navController = navController, DestinationScreen.Home)
-
+                            navigateTo(navController = navController, DestinationScreen.Login)
                         },
                         modifier = Modifier
                             .width(136.dp)

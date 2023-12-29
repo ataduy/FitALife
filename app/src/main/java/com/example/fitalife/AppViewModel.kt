@@ -28,7 +28,7 @@ class AppViewModel @Inject constructor(
 
 
     init {
-        //auth.signOut()
+        //auth.signOut()  // auto-logout for debug
         val currentUser = auth.currentUser
         signedIn.value = currentUser != null
         currentUser?.uid?.let {uid ->
@@ -37,8 +37,8 @@ class AppViewModel @Inject constructor(
     }
 
 
-    fun onSignup(username: String, email: String, pass: String) {
-        if (email.isEmpty() || pass.isEmpty()) {
+    fun onSignup(username: String, name: String, surname: String, email: String, pass: String) {
+        if (email.isEmpty() || pass.isEmpty() || name.isEmpty() || surname.isEmpty()) {
             handleException(customMessage = "Please fill in all fields")
             return
         }
@@ -55,7 +55,7 @@ class AppViewModel @Inject constructor(
                             if (task.isSuccessful) {
                                 signedIn.value = true
                                 // Create profile
-                                createOrUpdateProfile(username = username)
+                                createOrUpdateProfile(username = username, name = name, surname = surname)
                             } else {
                                 handleException(task.exception, "Signup failed")
                             }
@@ -71,6 +71,8 @@ class AppViewModel @Inject constructor(
 
     private fun createOrUpdateProfile(
         username: String? = null,
+        name: String? = null,
+        surname: String? = null,
         gender: String? = null,
         weight: String? = null,
         height: String? = null,
@@ -80,6 +82,8 @@ class AppViewModel @Inject constructor(
         val userData = UserData(
             userId = uid,
             username = username ?: userData.value?.username,
+            name = name ?: userData.value?.name,
+            surname = surname ?: userData.value?.surname,
             gender = gender ?: userData.value?.gender,
             weight = weight ?: userData.value?.weight,
             height = height ?: userData.value?.height,
@@ -113,7 +117,7 @@ class AppViewModel @Inject constructor(
     }
 
     fun updateProfileData(gender: String, weight: String, height: String, age: String) {
-        createOrUpdateProfile(username = null, gender, weight, height, age)
+        createOrUpdateProfile(username = null, name = null, surname = null, gender, weight, height, age)
     }
 
 

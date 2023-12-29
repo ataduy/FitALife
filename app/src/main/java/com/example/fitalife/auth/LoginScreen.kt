@@ -56,7 +56,6 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
     checkSignedIn(vm = vm, navController = navController)
 
     val focus = LocalFocusManager.current
-    val usernameState = remember { mutableStateOf(TextFieldValue()) }
     val emailState = remember { mutableStateOf(TextFieldValue()) }
     val passState = remember { mutableStateOf(TextFieldValue()) }
 
@@ -186,8 +185,7 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                 Button(
                     onClick = {
                         focus.clearFocus(force = true)
-                        vm.onSignup(
-                            usernameState.value.text,
+                        vm.onLogin(
                             emailState.value.text,
                             passState.value.text
                         )

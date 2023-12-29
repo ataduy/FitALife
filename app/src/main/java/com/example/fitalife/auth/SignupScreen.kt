@@ -16,13 +16,13 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -33,6 +33,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.capitalize
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -43,10 +44,9 @@ import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.R.*
 import com.example.fitalife.main.checkSignedIn
-import com.example.fitalife.main.navigateTo
 import com.example.fitalife.ui.theme.nunitobold
-import com.example.fitalife.ui.theme.nunitoregular
 import com.example.fitalife.ui.theme.robotoregular
+import java.util.Locale
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -56,9 +56,15 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
     checkSignedIn(vm = vm, navController = navController)
 
     val focus = LocalFocusManager.current
-    val usernameState = remember { mutableStateOf(TextFieldValue()) }
+    val nameState = remember { mutableStateOf(TextFieldValue()) }
+    val surnameState = remember { mutableStateOf(TextFieldValue()) }
     val emailState = remember { mutableStateOf(TextFieldValue()) }
     val passState = remember { mutableStateOf(TextFieldValue()) }
+    val usernameState = remember { mutableStateOf("") }
+
+    LaunchedEffect(nameState.value, surnameState.value) {
+        usernameState.value = "${nameState.value.text}${surnameState.value.text}".lowercase(Locale.getDefault())
+    }
 
     Surface(modifier = Modifier.fillMaxSize()) {
 
@@ -67,6 +73,11 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                 .background(color = Color(0xFF225555))
                 .fillMaxSize()
         ) {
+
+            Text(
+                text = "Username: ${usernameState.value}",
+                // Text stilinizi burada belirleyebilirsiniz.
+            )
 
             // Branding
             Column(
@@ -98,8 +109,8 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
             ) {
 
                 OutlinedTextField(
-                    value = emailState.value,
-                    onValueChange = { emailState.value = it},
+                    value = nameState.value,
+                    onValueChange = { nameState.value = it},
                     modifier = Modifier
                         .padding(20.dp)
                         .width(285.dp)
@@ -136,9 +147,8 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
 
 
                 OutlinedTextField(
-                    value = passState.value,
-                    onValueChange = { passState.value = it},
-                    visualTransformation = PasswordVisualTransformation(),
+                    value = surnameState.value,
+                    onValueChange = { surnameState.value = it},
                     modifier = Modifier
                         .padding(20.dp)
                         .width(285.dp)
@@ -286,7 +296,9 @@ fun SignupScreen(navController: NavController, vm: AppViewModel) {
                     onClick = {
                         focus.clearFocus(force = true)
                         vm.onSignup(
-                            usernameState.value.text,
+                            usernameState.value,
+                            nameState.value.text.capitalize(),
+                            surnameState.value.text.capitalize(),
                             emailState.value.text,
                             passState.value.text
                         )
