@@ -4,7 +4,7 @@
             "outputFile": "com.example.fitalife.app-mergeDebugResources-77:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/249bb217fc1a333ecb606cde08829b68/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\249bb217fc1a333ecb606cde08829b68\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

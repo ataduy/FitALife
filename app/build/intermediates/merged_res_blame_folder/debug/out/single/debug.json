@@ -1,178 +1,178 @@
 [
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_keto.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_keto.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_note.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_note.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_lowcarb.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_lowcarb.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_logo.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/logo.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_home.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_home.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_logo.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/logo.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ig_vegetarian.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ig_vegetarian.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_accept.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_accept.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_cart.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_cart.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_no_sugar.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_no_sugar.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/font_nunito.ttf.flat",
+        "source": "com.example.fitalife.app-main-81:/font/nunito.ttf"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_meal.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_meal.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable-nodpi_ic_run.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable-nodpi/ic_run.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/xml_backup_rules.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/xml/backup_rules.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_meal.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_meal.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_vegan.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_vegan.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_reject.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_reject.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_raw_diet.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_raw_diet.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_arrow_left.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_arrow_left.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_dumbell.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_dumbell.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_pp_default.jpeg.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/pp_default.jpeg"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/font_roboto.ttf.flat",
+        "source": "com.example.fitalife.app-main-81:/font/roboto.ttf"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable-nodpi_ic_run.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable-nodpi/ic_run.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_keto.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_keto.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_mediterranean.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_mediterranean.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_vegan.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_vegan.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/font_nunitobold.ttf.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/font/nunitobold.ttf"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_reject.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_reject.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/font_nunito.ttf.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/font/nunito.ttf"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_dumbell.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_dumbell.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_cart.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_cart.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_arrow_left.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_arrow_left.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_banner.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_banner.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/font_roboto.ttf.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/font/roboto.ttf"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_no_sugar.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_no_sugar.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_note.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_note.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_apple.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_apple.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_home.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_home.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_banner.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_banner.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_lowcarb.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_lowcarb.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/font_nunitobold.ttf.flat",
+        "source": "com.example.fitalife.app-main-81:/font/nunitobold.ttf"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ig_vegetarian.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ig_vegetarian.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_accept.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_accept.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_paleo.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_paleo.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_pp_default.jpeg.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/pp_default.jpeg"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/xml/data_extraction_rules.xml"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_mediterranean.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_mediterranean.png"
+    },
+    {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_paleo.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_paleo.png"
+    },
+    {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_raw_diet.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/ic_raw_diet.png"
     },
     {
         "merged": "com.example.fitalife.app-merged_res-79:/drawable_frame_hexagon.png.flat",
         "source": "com.example.fitalife.app-main-81:/drawable/frame_hexagon.png"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_apple.png.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_apple.png"
+        "merged": "com.example.fitalife.app-merged_res-79:/xml_backup_rules.xml.flat",
+        "source": "com.example.fitalife.app-main-81:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
-    },
-    {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "com.example.fitalife.app-merged_res-79:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.fitalife.app-main-81:/mipmap-hdpi/ic_launcher.webp"
     }
 ]

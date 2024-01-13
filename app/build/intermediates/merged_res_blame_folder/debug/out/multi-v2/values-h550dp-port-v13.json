@@ -4,7 +4,7 @@
             "outputFile": "com.example.fitalife.app-mergeDebugResources-77:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/ardaaltinors/.gradle/caches/transforms-3/9c40c0ce44902a2f5f55a914ea76cf01/transformed/material-1.4.0-beta01/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\ARPENTAX\\.gradle\\caches\\transforms-3\\9c40c0ce44902a2f5f55a914ea76cf01\\transformed\\material-1.4.0-beta01\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
