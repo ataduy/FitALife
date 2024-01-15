@@ -1809,9 +1809,12 @@ drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable ic_calpng
 drawable ic_cart
 drawable ic_clock_black_24dp
+drawable ic_diet
 drawable ic_dumbell
+drawable ic_heart
 drawable ic_home
 drawable ic_keto
 drawable ic_keyboard_black_24dp
@@ -1828,7 +1831,10 @@ drawable ic_paleo
 drawable ic_raw_diet
 drawable ic_reject
 drawable ic_run
+drawable ic_timer
 drawable ic_vegan
+drawable ic_walk
+drawable ic_workput
 drawable ig_vegetarian
 drawable logo
 drawable material_cursor_drawable

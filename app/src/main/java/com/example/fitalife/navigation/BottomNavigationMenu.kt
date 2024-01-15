@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
@@ -31,9 +32,9 @@ import com.example.fitalife.main.navigateTo
 
 enum class BottomNavigationItem(val icon: Int, val navDestination: DestinationScreen) {
     HOME(R.drawable.ic_home, DestinationScreen.Home),
-    NOTE(R.drawable.ic_note, DestinationScreen.Home),
-    DIET(R.drawable.ic_meal, DestinationScreen.Diet),
-    CART(R.drawable.ic_cart, DestinationScreen.Home),
+    NOTE(R.drawable.ic_workput, DestinationScreen.Workouts),
+    DIET(R.drawable.ic_timer, DestinationScreen.RunTime),
+    CART(R.drawable.ic_diet, DestinationScreen.Diet),
 }
 
 
@@ -41,6 +42,7 @@ enum class BottomNavigationItem(val icon: Int, val navDestination: DestinationSc
 fun BottomNavigationMenu(selectedItem: BottomNavigationItem, navController: NavController) {
     Row(
         modifier = Modifier
+            .height(100.dp)
             .fillMaxWidth()
             .wrapContentHeight()
             .padding(top = 26.dp)
@@ -64,7 +66,7 @@ fun BottomNavigationMenu(selectedItem: BottomNavigationItem, navController: NavC
                         modifier = Modifier
                             .padding(10.dp)
                             .clip(CircleShape)
-                            .size(45.dp)
+                            .size(50.dp)
                             .weight(1f)
                             .clickable {
                                 navigateTo(navController, item.navDestination)

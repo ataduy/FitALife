@@ -1808,9 +1808,12 @@ int drawable ic_call_answer_video 0x7f070080
 int drawable ic_call_answer_video_low 0x7f070081
 int drawable ic_call_decline 0x7f070082
 int drawable ic_call_decline_low 0x7f070083
+int drawable ic_calpng 0x7f0700c5
 int drawable ic_cart 0x7f070084
 int drawable ic_clock_black_24dp 0x7f070085
+int drawable ic_diet 0x7f0700c4
 int drawable ic_dumbell 0x7f070086
+int drawable ic_heart 0x7f0700c6
 int drawable ic_home 0x7f070087
 int drawable ic_keto 0x7f070088
 int drawable ic_keyboard_black_24dp 0x7f070089
@@ -1827,7 +1830,10 @@ int drawable ic_paleo 0x7f070093
 int drawable ic_raw_diet 0x7f070094
 int drawable ic_reject 0x7f070095
 int drawable ic_run 0x7f070096
+int drawable ic_timer 0x7f0700c3
 int drawable ic_vegan 0x7f070097
+int drawable ic_walk 0x7f0700c1
+int drawable ic_workput 0x7f0700c2
 int drawable ig_vegetarian 0x7f070098
 int drawable logo 0x7f070099
 int drawable material_cursor_drawable 0x7f07009a

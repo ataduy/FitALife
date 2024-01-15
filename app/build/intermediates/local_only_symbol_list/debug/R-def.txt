@@ -14,8 +14,11 @@ drawable ic_accept
 drawable ic_apple
 drawable ic_arrow_left
 drawable ic_banner
+drawable ic_calpng
 drawable ic_cart
+drawable ic_diet
 drawable ic_dumbell
+drawable ic_heart
 drawable ic_home
 drawable ic_keto
 drawable ic_lowcarb
@@ -27,7 +30,10 @@ drawable ic_paleo
 drawable ic_raw_diet
 drawable ic_reject
 drawable ic_run
+drawable ic_timer
 drawable ic_vegan
+drawable ic_walk
+drawable ic_workput
 drawable ig_vegetarian
 drawable logo
 drawable pp_default

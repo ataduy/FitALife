@@ -8,6 +8,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -88,85 +89,110 @@ private fun HomeContent(
                         .padding(12.dp),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-
                     Card(
                         modifier = Modifier
-                            .clickable {
-                                navigateTo(
-                                    navController = navController,
-                                    dest = DestinationScreen.Workouts
-                                )
-                            }
-                            .padding(8.dp)
-                            .size(75.dp)
-                            .border(
-                                width = 2.dp,
-                                color = Color(0xFFF5F5F5),
-                                shape = RoundedCornerShape(size = 20.dp)
-                            ),
-                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                    ) {
+                            .padding(top = 60.dp, start = 12.dp, end = 12.dp)
+                            .width(140.dp)
+                            .size(110.dp),
+
+                        colors = CardDefaults.cardColors(containerColor = Color.LightGray),
+
+                        ) {
                         Image(
-                            painter = painterResource(id = R.drawable.ic_dumbell),
-                            contentDescription = "Dumbbell",
+                            painter = painterResource(R.drawable.ic_calpng),
+                            contentDescription = "CAL BURN",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                                .size(60.dp)
+                        )
+
+
+                        Text(
                             modifier = Modifier
-                                .padding(10.dp)
-                                .fillMaxSize()
+                                .align(Alignment.CenterHorizontally),
+
+                            text = " 3100  " ,
+                            style = TextStyle(
+                                fontSize = 15.sp,
+                                fontFamily = robotoregular,
+                                fontWeight = FontWeight(600),
+                                color = Color.Gray,
+                                letterSpacing = 0.1.sp,
+
+                                )
+                        )
+
+                        Text(
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally),
+
+                            text = " CAL BURN  " ,
+                            style = TextStyle(
+                                fontSize = 15.sp,
+                                fontFamily = robotoregular,
+                                fontWeight = FontWeight(600),
+                                color = Color.Black,
+                                letterSpacing = 0.1.sp,
+
+                                )
                         )
                     }
 
                     Card(
                         modifier = Modifier
-                            .clickable {
-                                navigateTo(
-                                    navController = navController,
-                                    dest = DestinationScreen.RunTime
-                                )
-                            }
-                            .padding(8.dp)
-                            .size(75.dp)
-                            .border(
-                                width = 2.dp,
-                                color = Color(0xFFF5F5F5),
-                                shape = RoundedCornerShape(size = 20.dp)
-                            ),
-                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.ic_run),
-                            contentDescription = "run",
-                            modifier = Modifier
-                                .padding(10.dp)
-                                .fillMaxSize()
-                        )
-                    }
+                            .padding(top = 60.dp, start = 12.dp, end = 12.dp)
+                            .width(140.dp)
+                            .size(110.dp),
 
-                    Card(
-                        modifier = Modifier
-                            .clickable {
-                                navigateTo(navController = navController, DestinationScreen.Profile)
-                            }
-                            .padding(8.dp)
-                            .size(75.dp)
-                            .border(
-                                width = 2.dp,
-                                color = Color(0xFFF5F5F5),
-                                shape = RoundedCornerShape(size = 20.dp)
-                            ),
-                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
-                    ) {
+                        colors = CardDefaults.cardColors(containerColor = Color.LightGray),
+
+                        ) {
                         Image(
-                            painter = painterResource(id = R.drawable.ic_apple),
-                            contentDescription = "diet",
+                            painter = painterResource(R.drawable.ic_heart),
+                            contentDescription = "HEARTBEAT",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                                .size(60.dp)
+                                .padding(5.dp)
+                        )
+
+
+                        Text(
                             modifier = Modifier
-                                .padding(10.dp)
-                                .fillMaxSize()
+                                .align(Alignment.CenterHorizontally),
+
+                            text = " 123 BPM  " ,
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                fontFamily = robotoregular,
+                                fontWeight = FontWeight(600),
+                                color = Color.Gray,
+                                letterSpacing = 0.1.sp,
+
+                                )
+                        )
+
+                        Text(
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally),
+
+                            text = " HEARTBEAT  " ,
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                fontFamily = robotoregular,
+                                fontWeight = FontWeight(600),
+                                color = Color.Black,
+                                letterSpacing = 0.1.sp,
+
+                                )
                         )
                     }
 
 
                 }
 
+
+                
                 // Body
                 Column(
                     modifier = Modifier
@@ -179,32 +205,54 @@ private fun HomeContent(
                         modifier = Modifier
                             .padding(top = 20.dp, start = 12.dp, end = 12.dp)
                             .fillMaxWidth()
-                            .size(250.dp)
-                            .border(
-                                width = 2.dp,
-                                color = Color(0xFFF5F5F5),
-                                shape = RoundedCornerShape(size = 10.dp)
-                            ),
+                            .size(150.dp)
+                            ,
 
-                        colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                        colors = CardDefaults.cardColors(containerColor = Color.LightGray),
 
                         ) {
+                        Image(
+                            painter = painterResource(R.drawable.ic_walk),
+                            contentDescription = "STEPS",
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                                .size(90.dp)
+                                .padding(5.dp)
+                        )
+
+
                         Text(
                             modifier = Modifier
-                                .padding(20.dp)
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " " ,
+                            text = " 6500  " ,
                             style = TextStyle(
-                                fontSize = 20.sp,
+                                fontSize = 15.sp,
                                 fontFamily = robotoregular,
                                 fontWeight = FontWeight(600),
-                                color = Color.White,
+                                color = Color.Gray,
+                                letterSpacing = 0.1.sp,
+
+                                )
+                        )
+
+                        Text(
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally),
+
+                            text = " STEPS  " ,
+                            style = TextStyle(
+                                fontSize = 15.sp,
+                                fontFamily = robotoregular,
+                                fontWeight = FontWeight(600),
+                                color = Color.Black,
                                 letterSpacing = 0.1.sp,
 
                                 )
                         )
                     }
+
+                    Spacer(modifier = Modifier.height(30.dp))
 
                     // Image Card
                     Card(
