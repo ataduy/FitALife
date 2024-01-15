@@ -1,4 +1,4 @@
-#Mon Jan 15 20:40:11 TRT 2024
+#Mon Jan 15 21:11:01 TRT 2024
 base.0=/Users/ardaaltinors/Desktop/FitALife/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/ardaaltinors/Desktop/FitALife/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/ardaaltinors/Desktop/FitALife/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
