@@ -421,3 +421,6 @@ val banners = listOf(
 fun getRandomBanner(): Int {
     return banners.random()
 }
+
+
+//
