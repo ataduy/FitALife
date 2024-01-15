@@ -61,8 +61,7 @@ fun DietScreen(navController: NavController, vm: AppViewModel) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(24.dp),
-            verticalArrangement = Arrangement.Center,
+                .padding(vertical = 24.dp ,horizontal = 24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
@@ -70,7 +69,7 @@ fun DietScreen(navController: NavController, vm: AppViewModel) {
             Header(navController)
 
             // List of Diets
-            val rows = arrayOf(3, 2, 3) // Her satırdaki kart sayısını tanımlar
+            val rows = arrayOf(3, 3) // Her satırdaki kart sayısını tanımlar
             var currentDietIndex = 0
 
             Column(

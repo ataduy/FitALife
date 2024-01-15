@@ -1,5 +1,6 @@
 package com.example.fitalife.main
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -9,9 +10,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
@@ -22,7 +26,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -30,6 +37,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
 import com.example.fitalife.DestinationScreen
+import com.example.fitalife.R
 import com.example.fitalife.data.getPrograms
 import com.example.fitalife.ui.theme.robotoregular
 
@@ -42,22 +50,63 @@ fun WorkoutsScreen(navController: NavController, vm: AppViewModel) {
         modifier = Modifier.fillMaxSize(),
         color = Color(0xFF225555)
     ) {
-        Column(modifier = Modifier
-            .fillMaxSize()
-            .padding(24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.SpaceEvenly) {
 
-            for (workout in listOfWorkouts) {
-                val workoutId = workout.id
-                val workoutTitle = workout.title
+        Column {
 
-                WorkoutCard(navController, workoutId, workoutTitle)
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 10.dp),
+                horizontalArrangement = Arrangement.Start
+            ) {
+                // backtohome
+                Card(
+                    modifier = Modifier
+                        .clickable {
+                            // navController.popBackStack()
+                            navigateTo(navController = navController, dest = DestinationScreen.Home)
+                        }
+                        .padding(8.dp)
+                        .size(45.dp)
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFF5F5F5),
+                            shape = CircleShape
+                        ),
+                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.ic_home_flat),
+                        contentDescription = "arrow left",
+                        modifier = Modifier
+                            .padding(10.dp)
+                            .fillMaxSize()
+                            .clip(CircleShape),
+                        colorFilter = ColorFilter.tint(Color.White)
+                    )
+                }
 
             }
 
+            Column(modifier = Modifier
+                .fillMaxSize()
+                .padding(vertical = 1.dp, horizontal = 24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.SpaceEvenly) {
+
+                for (workout in listOfWorkouts) {
+                    val workoutId = workout.id
+                    val workoutTitle = workout.title
+
+                    WorkoutCard(navController, workoutId, workoutTitle)
+
+                }
+
+            }
 
         }
+
+
     }
 
 }

@@ -17,7 +17,9 @@ import androidx.navigation.navArgument
 import com.example.fitalife.auth.LoginScreen
 import com.example.fitalife.auth.SignupScreen
 import com.example.fitalife.auth.WelcomeScreen
+import com.example.fitalife.main.DietDaySelectScreen
 import com.example.fitalife.main.DietDetailsScreen
+import com.example.fitalife.main.DietPlanScreen
 import com.example.fitalife.main.DietScreen
 import com.example.fitalife.main.HomeScreen
 import com.example.fitalife.main.NotificationMessage
@@ -57,6 +59,8 @@ sealed class DestinationScreen(val route: String) {
     object RunTime: DestinationScreen("runtime")
     object Diet: DestinationScreen("diet")
     object DietDetails: DestinationScreen("diet-details/{dietId}")
+    object DietDaySelect: DestinationScreen("dietdayselect/{dietId}")
+    object DietPlan: DestinationScreen("dietplan/{dietId}/{day}")
 }
 
 @Composable
@@ -103,5 +107,23 @@ fun FitALife() {
             DietDetailsScreen(navController = navController, vm = vm,
                 dietId = backStackEntry.arguments?.getString("dietId") ?: "")
         }
+        composable(route = DestinationScreen.DietDaySelect.route,
+            arguments = listOf(navArgument("dietId") { type = NavType.StringType })
+        ) { backStackEntry ->
+            DietDaySelectScreen(navController = navController,
+                dietId = backStackEntry.arguments?.getString("dietId") ?: "")
+        }
+        composable(
+            route = DestinationScreen.DietPlan.route,
+            arguments = listOf(
+                navArgument("dietId") { type = NavType.StringType },
+                navArgument("day") { type = NavType.StringType }
+            )
+        ) { backStackEntry ->
+            val dietId = backStackEntry.arguments?.getString("dietId") ?: ""
+            val day = backStackEntry.arguments?.getString("day") ?: ""
+            DietPlanScreen(navController = navController, dietId = dietId, day = day)
+        }
+
     }
 }

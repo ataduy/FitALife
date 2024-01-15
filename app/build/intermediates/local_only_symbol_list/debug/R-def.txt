@@ -20,6 +20,7 @@ drawable ic_diet
 drawable ic_dumbell
 drawable ic_heart
 drawable ic_home
+drawable ic_home_flat
 drawable ic_keto
 drawable ic_lowcarb
 drawable ic_meal

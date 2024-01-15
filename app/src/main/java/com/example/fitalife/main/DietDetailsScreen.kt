@@ -28,6 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -35,6 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.fitalife.AppViewModel
+import com.example.fitalife.DestinationScreen
 import com.example.fitalife.R
 import com.example.fitalife.data.WorkoutsPrograms
 import com.example.fitalife.data.getDiets
@@ -54,13 +56,49 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, dietId: St
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(vertical = 62.dp, horizontal = 22.dp),
+                .padding(vertical = 10.dp, horizontal = 22.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 10.dp, bottom = 42.dp),
+                horizontalArrangement = Arrangement.Start
+            ) {
+                // backtohome
+                Card(
+                    modifier = Modifier
+                        .clickable {
+                            // navController.popBackStack()
+                            navigateTo(navController = navController, dest = DestinationScreen.Home)
+                        }
+                        .padding(8.dp)
+                        .size(45.dp)
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFF5F5F5),
+                            shape = CircleShape
+                        ),
+                    colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.ic_home_flat),
+                        contentDescription = "arrow left",
+                        modifier = Modifier
+                            .padding(10.dp)
+                            .fillMaxSize()
+                            .clip(CircleShape),
+                        colorFilter = ColorFilter.tint(Color.White)
+                    )
+                }
+
+            }
+
             Text(
                 text = "${diet!!.title} Diet",
                 style = TextStyle(
-                    fontSize = 48.sp,
+                    fontSize = 36.sp,
                     fontFamily = robotoregular,
                     fontWeight = FontWeight(500),
                     color = Color(red = 219, green = 255,blue = 0),
@@ -82,7 +120,7 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, dietId: St
                         shape = RoundedCornerShape(size = 40.dp)
                     ),
                 shape = RoundedCornerShape(size = 40.dp),
-                colors = CardDefaults.cardColors(Color(0x599CABC2)),
+                colors = CardDefaults.cardColors(Color.White),
             ) {
                 diet?.let {
                     Column(
@@ -92,26 +130,27 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, dietId: St
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
                         Spacer(modifier = Modifier.height(30.dp))
-                        it.description.split("\n").forEach { line ->
-                            Text(text = line, fontSize = 16.sp, fontFamily = robotoregular, color = Color.White,
-                                modifier = Modifier
-                                    .padding(start = 20.dp, bottom = 10.dp)
-                                    .align(Alignment.Start))
-                        }
+                        Text(text = it.description, fontSize = 16.sp, fontFamily = robotoregular, color = Color.Black,
+                            modifier = Modifier
+                                .padding(start = 20.dp, bottom = 10.dp)
+                                .align(Alignment.Start)
+                        )
                     }
                 }
             }
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 50.dp),
-                horizontalArrangement = Arrangement.SpaceAround
+                    .padding(top = 10.dp),
+                horizontalArrangement = Arrangement.End
             ) {
 
-                // Reject
+                // Accept
                 Card(
                     modifier = Modifier
-                        .clickable { navController.popBackStack() }
+                        .clickable {
+                            navController.navigate("dietdayselect/$dietId")
+                        }
                         .padding(8.dp)
                         .size(45.dp)
                         .border(
@@ -122,7 +161,7 @@ fun DietDetailsScreen(navController: NavController, vm: AppViewModel, dietId: St
                     colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.ic_arrow_left),
+                        painter = painterResource(id = R.drawable.ic_accept),
                         contentDescription = "arrow left",
                         modifier = Modifier
                             .padding(10.dp)
