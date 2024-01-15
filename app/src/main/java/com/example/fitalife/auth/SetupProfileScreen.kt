@@ -53,10 +53,12 @@ fun SetupProfileScreen(navController: NavController, vm: AppViewModel) {
             modifier = Modifier
                 .background(color = Color(0xFF225555))
                 .fillMaxSize()
-        ) {
+
+        )
+        {
 
             Row() {
-                Button(onClick = { /*TODO*/ }) {
+                Button(onClick = {  }) {
                     
                 }
             }

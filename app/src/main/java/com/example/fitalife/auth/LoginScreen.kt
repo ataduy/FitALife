@@ -165,12 +165,15 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                         fontWeight = FontWeight(700),
                         color = Color(0xFFF5F5F5),
                         letterSpacing = 0.4.sp,
+
                     )
+
                 )
                 
                 Spacer(modifier = Modifier.height(10.dp))
                 SpecialDivider()
                 SpecialDivider()
+
 
             }
 
@@ -188,7 +191,9 @@ fun LoginScreen(navController: NavController, vm: AppViewModel) {
                         vm.onLogin(
                             emailState.value.text,
                             passState.value.text
+
                         )
+
                     },
                     modifier = Modifier
                         .width(285.dp),
