@@ -9,6 +9,11 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable banner
+drawable banner2
+drawable banner3
+drawable banner4
+drawable banner5
 drawable frame_hexagon
 drawable ic_accept
 drawable ic_apple

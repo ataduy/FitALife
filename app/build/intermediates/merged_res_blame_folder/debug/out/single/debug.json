@@ -32,8 +32,16 @@
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/xml/backup_rules.xml"
     },
     {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_banner2.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/banner2.png"
+    },
+    {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_dumbell.png.flat",
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_dumbell.png"
+    },
+    {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_banner.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/banner.png"
     },
     {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_mediterranean.png.flat",
@@ -44,12 +52,12 @@
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -84,10 +92,6 @@
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_paleo.png"
     },
     {
-        "merged": "com.example.fitalife.app-merged_res-79:/drawable_ic_home_flat.png.flat",
-        "source": "com.example.fitalife.app-main-81:/drawable/ic_home_flat.png"
-    },
-    {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable-400dpi_ic_timer.png.flat",
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable-400dpi/ic_timer.png"
     },
@@ -104,6 +108,10 @@
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_banner3.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/banner3.png"
+    },
+    {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable-400dpi_ic_diet.png.flat",
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable-400dpi/ic_diet.png"
     },
@@ -114,6 +122,14 @@
     {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_keto.png.flat",
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_keto.png"
+    },
+    {
+        "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/drawable_ic_home_flat.png.flat",
+        "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/drawable/ic_home_flat.png"
+    },
+    {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_banner4.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/banner4.png"
     },
     {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xhdpi_ic_launcher.webp.flat",
@@ -170,6 +186,10 @@
     {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-main-81:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fitalife.app-merged_res-79:/drawable_banner5.png.flat",
+        "source": "com.example.fitalife.app-main-81:/drawable/banner5.png"
     },
     {
         "merged": "/Users/ardaaltinors/.gradle/daemon/8.0/com.example.fitalife.app-merged_res-79:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
