@@ -2,7 +2,6 @@ package com.example.fitalife;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.QualifierMetadata;
@@ -26,27 +25,23 @@ public final class AppViewModel_Factory implements Factory<AppViewModel> {
 
   private final Provider<FirebaseFirestore> dbProvider;
 
-  private final Provider<FirebaseStorage> storageProvider;
-
   public AppViewModel_Factory(Provider<FirebaseAuth> authProvider,
-      Provider<FirebaseFirestore> dbProvider, Provider<FirebaseStorage> storageProvider) {
+      Provider<FirebaseFirestore> dbProvider) {
     this.authProvider = authProvider;
     this.dbProvider = dbProvider;
-    this.storageProvider = storageProvider;
   }
 
   @Override
   public AppViewModel get() {
-    return newInstance(authProvider.get(), dbProvider.get(), storageProvider.get());
+    return newInstance(authProvider.get(), dbProvider.get());
   }
 
   public static AppViewModel_Factory create(Provider<FirebaseAuth> authProvider,
-      Provider<FirebaseFirestore> dbProvider, Provider<FirebaseStorage> storageProvider) {
-    return new AppViewModel_Factory(authProvider, dbProvider, storageProvider);
+      Provider<FirebaseFirestore> dbProvider) {
+    return new AppViewModel_Factory(authProvider, dbProvider);
   }
 
-  public static AppViewModel newInstance(FirebaseAuth auth, FirebaseFirestore db,
-      FirebaseStorage storage) {
-    return new AppViewModel(auth, db, storage);
+  public static AppViewModel newInstance(FirebaseAuth auth, FirebaseFirestore db) {
+    return new AppViewModel(auth, db);
   }
 }

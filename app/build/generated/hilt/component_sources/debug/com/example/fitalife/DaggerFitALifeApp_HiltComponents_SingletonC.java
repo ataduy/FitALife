@@ -438,7 +438,7 @@ public final class DaggerFitALifeApp_HiltComponents_SingletonC {
       public T get() {
         switch (id) {
           case 0: // com.example.fitalife.AppViewModel 
-          return (T) new AppViewModel(HiltModule_ProvideAuthenticationFactory.provideAuthentication(viewModelCImpl.hiltModule), HiltModule_ProvideFirestoreFactory.provideFirestore(viewModelCImpl.hiltModule), HiltModule_ProvideStorageFactory.provideStorage(viewModelCImpl.hiltModule));
+          return (T) new AppViewModel(HiltModule_ProvideAuthenticationFactory.provideAuthentication(viewModelCImpl.hiltModule), HiltModule_ProvideFirestoreFactory.provideFirestore(viewModelCImpl.hiltModule));
 
           default: throw new AssertionError(id);
         }

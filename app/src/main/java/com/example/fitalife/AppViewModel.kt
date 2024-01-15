@@ -17,8 +17,7 @@ const val USERS = "users"
 @HiltViewModel
 class AppViewModel @Inject constructor(
     val auth: FirebaseAuth,
-    val db: FirebaseFirestore,
-    val storage: FirebaseStorage
+    val db: FirebaseFirestore
 ): ViewModel() {
 
     val signedIn = mutableStateOf(false)
@@ -163,7 +162,12 @@ class AppViewModel @Inject constructor(
             }
     }
 
-
+    fun onLogout() {
+        auth.signOut()
+        signedIn.value = false
+        userData.value = null
+        popupNotification.value = Event("Logged out")
+    }
 
 
     fun handleException(exception: Exception? = null, customMessage: String? = "") {

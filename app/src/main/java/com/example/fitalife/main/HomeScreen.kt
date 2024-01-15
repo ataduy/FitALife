@@ -58,7 +58,7 @@ fun HomeScreen(navController: NavController, vm: AppViewModel) {
         var name by rememberSaveable { mutableStateOf(userData?.name ?: "") }
         var surname by rememberSaveable { mutableStateOf(userData?.surname ?: "") }
 
-        HomeContent(name = name, surname = surname, navController = navController)
+        HomeContent(name = name, surname = surname, navController = navController, vm = vm)
     }
 }
 
@@ -66,7 +66,8 @@ fun HomeScreen(navController: NavController, vm: AppViewModel) {
 private fun HomeContent(
     name: String,
     surname: String,
-    navController: NavController
+    navController: NavController,
+    vm: AppViewModel
 ) {
     Surface(modifier = Modifier.fillMaxSize(), color = Color(0xFF225555)) {
 
@@ -75,12 +76,14 @@ private fun HomeContent(
                 .fillMaxSize()
         ) {
 
-            Column(modifier = Modifier
-                .padding(12.dp)
-                .weight(1f)) {
+            Column(
+                modifier = Modifier
+                    .padding(12.dp)
+                    .weight(1f)
+            ) {
 
                 // Header
-                HeaderContent(name = name, surname = surname)
+                HeaderContent(name = name, surname = surname, vm = vm, navController = navController)
 
                 //Cards - 3
                 Row(
@@ -91,7 +94,7 @@ private fun HomeContent(
                 ) {
                     Card(
                         modifier = Modifier
-                            .padding(top = 60.dp, start = 12.dp, end = 12.dp)
+                            .padding(top = 50.dp, start = 12.dp, end = 12.dp)
                             .width(140.dp)
                             .size(110.dp),
 
@@ -102,7 +105,8 @@ private fun HomeContent(
                             painter = painterResource(R.drawable.ic_calpng),
                             contentDescription = "CAL BURN",
                             contentScale = ContentScale.Crop,
-                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
                                 .size(60.dp)
                         )
 
@@ -111,7 +115,7 @@ private fun HomeContent(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " 3100  " ,
+                            text = " 3100  ",
                             style = TextStyle(
                                 fontSize = 15.sp,
                                 fontFamily = robotoregular,
@@ -126,7 +130,7 @@ private fun HomeContent(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " CAL BURN  " ,
+                            text = " CAL BURN  ",
                             style = TextStyle(
                                 fontSize = 15.sp,
                                 fontFamily = robotoregular,
@@ -140,7 +144,7 @@ private fun HomeContent(
 
                     Card(
                         modifier = Modifier
-                            .padding(top = 60.dp, start = 12.dp, end = 12.dp)
+                            .padding(top = 50.dp, start = 12.dp, end = 12.dp)
                             .width(140.dp)
                             .size(110.dp),
 
@@ -151,7 +155,8 @@ private fun HomeContent(
                             painter = painterResource(R.drawable.ic_heart),
                             contentDescription = "HEARTBEAT",
                             contentScale = ContentScale.Crop,
-                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
                                 .size(60.dp)
                                 .padding(5.dp)
                         )
@@ -161,7 +166,7 @@ private fun HomeContent(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " 123 BPM  " ,
+                            text = " 123 BPM  ",
                             style = TextStyle(
                                 fontSize = 16.sp,
                                 fontFamily = robotoregular,
@@ -176,7 +181,7 @@ private fun HomeContent(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " HEARTBEAT  " ,
+                            text = " HEARTBEAT  ",
                             style = TextStyle(
                                 fontSize = 16.sp,
                                 fontFamily = robotoregular,
@@ -192,7 +197,6 @@ private fun HomeContent(
                 }
 
 
-                
                 // Body
                 Column(
                     modifier = Modifier
@@ -203,10 +207,9 @@ private fun HomeContent(
 
                     Card(
                         modifier = Modifier
-                            .padding(top = 20.dp, start = 12.dp, end = 12.dp)
+                            .padding(top = 16.dp, start = 12.dp, end = 12.dp)
                             .fillMaxWidth()
-                            .size(150.dp)
-                            ,
+                            .size(150.dp),
 
                         colors = CardDefaults.cardColors(containerColor = Color.LightGray),
 
@@ -215,7 +218,8 @@ private fun HomeContent(
                             painter = painterResource(R.drawable.ic_walk),
                             contentDescription = "STEPS",
                             contentScale = ContentScale.Crop,
-                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
                                 .size(90.dp)
                                 .padding(5.dp)
                         )
@@ -225,7 +229,7 @@ private fun HomeContent(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " 6500  " ,
+                            text = " 6500  ",
                             style = TextStyle(
                                 fontSize = 15.sp,
                                 fontFamily = robotoregular,
@@ -240,7 +244,7 @@ private fun HomeContent(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally),
 
-                            text = " STEPS  " ,
+                            text = " STEPS  ",
                             style = TextStyle(
                                 fontSize = 15.sp,
                                 fontFamily = robotoregular,
@@ -252,14 +256,14 @@ private fun HomeContent(
                         )
                     }
 
-                    Spacer(modifier = Modifier.height(30.dp))
+                    Spacer(modifier = Modifier.height(16.dp))
 
                     // Image Card
                     Card(
                         modifier = Modifier
-                            .padding(top = 30.dp, start = 12.dp, end = 12.dp)
+                            .padding(top = 20.dp, start = 12.dp, end = 12.dp)
                             .fillMaxWidth()
-                            .size(183.dp)
+                            .height(273.dp)
                             .border(
                                 width = 2.dp,
                                 color = Color(0xFFF5F5F5),
@@ -276,7 +280,7 @@ private fun HomeContent(
                     ) {
 
                         Image(
-                            painter = painterResource(R.drawable.ic_banner),
+                            painter = painterResource(id = getRandomBanner()),
                             contentDescription = "No Pain No Gain",
                             contentScale = ContentScale.Crop,
                             modifier = Modifier.align(Alignment.CenterHorizontally)
@@ -302,7 +306,7 @@ private fun HomeContent(
 
 
 @Composable
-private fun HeaderContent(name: String, surname: String) {
+private fun HeaderContent(name: String, surname: String, vm: AppViewModel, navController: NavController) {
 
     val fullName = "$name $surname"
 
@@ -325,8 +329,25 @@ private fun HeaderContent(name: String, surname: String) {
                     modifier = Modifier
                         .clip(CircleShape)
                         .width(45.dp)
+                        .clickable {
+                            navigateTo(navController = navController, dest = DestinationScreen.Profile)
+                        }
                 )
             }
+            Text(
+                text = "Sign Out",
+                style = TextStyle(
+                    fontSize = 12.sp,
+                    fontFamily = robotoregular,
+                    fontWeight = FontWeight(500),
+                    color = Color.White,
+                    letterSpacing = 0.1.sp,
+                ),
+                modifier = Modifier.clickable {
+                    vm.onLogout()
+                    navigateTo(navController = navController, DestinationScreen.Welcome)
+                }
+            )
         }
 
         // Name
@@ -340,7 +361,7 @@ private fun HeaderContent(name: String, surname: String) {
                     fontFamily = FontFamily.SansSerif,
                     fontWeight = FontWeight(500),
                     letterSpacing = 0.1.sp
-                )
+                ),
             )
 
             Divider(
@@ -386,4 +407,17 @@ private fun HeaderContent(name: String, surname: String) {
         }
 
     }
+}
+
+val banners = listOf(
+    R.drawable.ic_banner,
+    R.drawable.banner,
+    R.drawable.banner2,
+    R.drawable.banner3,
+    R.drawable.banner4,
+    R.drawable.banner5
+)
+
+fun getRandomBanner(): Int {
+    return banners.random()
 }
