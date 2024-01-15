@@ -29,7 +29,7 @@ class AppViewModel @Inject constructor(
     init {
         //auth.signOut()  // auto-logout for debug
         val currentUser = auth.currentUser
-        signedIn.value = currentUser != null
+        signedIn.value = currentUser !=  null
         currentUser?.uid?.let {uid ->
             getUserData(uid)
         }
@@ -38,7 +38,7 @@ class AppViewModel @Inject constructor(
 
     fun onSignup(username: String, name: String, surname: String, email: String, pass: String) {
         if (email.isEmpty() || pass.isEmpty() || name.isEmpty() || surname.isEmpty()) {
-            handleException(customMessage = "Please fill in all fields")
+            handleException(customMessage = "Please fill in all fields!")
             return
         }
 
@@ -46,7 +46,7 @@ class AppViewModel @Inject constructor(
         db.collection(USERS).whereEqualTo("username", username).get()
             .addOnSuccessListener { documents ->
                 if (documents.size() > 0) {
-                    handleException(customMessage = "Username already exists")
+                    handleException(customMessage = "Username already exists!")
                     inProgress.value = false
                 } else {
                     auth.createUserWithEmailAndPassword(email, pass)
@@ -56,7 +56,7 @@ class AppViewModel @Inject constructor(
                                 // Create profile
                                 createOrUpdateProfile(username = username, name = name, surname = surname)
                             } else {
-                                handleException(task.exception, "Signup failed")
+                                handleException(task.exception, "Signup failed!")
                             }
                             inProgress.value = false
                         }
