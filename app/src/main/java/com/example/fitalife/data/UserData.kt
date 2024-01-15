@@ -10,8 +10,6 @@ data class UserData(
     val age: String? = null,
     val weight: String? = null,
     val height: String? = null,
-    val workouts: List<String>? = null,
-    val trainer: String? = null,
 ) {
     fun toMap() = mapOf(
         "userId" to userId,
@@ -23,7 +21,5 @@ data class UserData(
         "age" to age,
         "weight" to weight,
         "height" to height,
-        "workouts" to workouts,
-        "trainer" to trainer
     )
 }
