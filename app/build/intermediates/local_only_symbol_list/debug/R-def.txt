@@ -9,11 +9,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
-drawable banner
-drawable banner2
-drawable banner3
-drawable banner4
-drawable banner5
+drawable fearforget
 drawable frame_hexagon
 drawable ic_accept
 drawable ic_apple
@@ -42,7 +38,12 @@ drawable ic_walk
 drawable ic_workput
 drawable ig_vegetarian
 drawable logo
+drawable nobodycar
 drawable pp_default
+drawable soretodaypng
+drawable takevery
+drawable theonly
+drawable yesterdaynow
 font nunito
 font nunitobold
 font roboto

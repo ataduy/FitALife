@@ -113,7 +113,7 @@ fun getDiets(): List<DietLists> {
                 "Saturday - Breakfast: Pancakes with maple syrup and fresh fruit. Lunch: Falafel wrap with tahini sauce. Dinner: Vegetarian chili with cornbread.",
                 "Sunday - Breakfast: French toast with berries and honey. Lunch: Margherita pizza with a side salad. Dinner: Vegetable stir-fry with tofu and brown rice."
             ),
-            imageResource = R.drawable.ic_vegan
+            imageResource = R.drawable.ig_vegetarian
         ),
 
                 /*

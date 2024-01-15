@@ -266,7 +266,12 @@ private fun HomeContent(
                             .height(273.dp)
                             .border(
                                 width = 2.dp,
-                                color = Color(0xFFF5F5F5),
+                                color = Color(
+                                    red = 156,
+                                    green = 171,
+                                    blue = 194,
+                                    alpha = 35
+                                ),
                                 shape = RoundedCornerShape(size = 10.dp)
                             ),
                         colors = CardDefaults.cardColors(
@@ -283,7 +288,9 @@ private fun HomeContent(
                             painter = painterResource(id = getRandomBanner()),
                             contentDescription = "No Pain No Gain",
                             contentScale = ContentScale.Crop,
-                            modifier = Modifier.align(Alignment.CenterHorizontally)
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .clip(shape = RoundedCornerShape(10.dp)),
                         )
                     }
 
@@ -411,11 +418,11 @@ private fun HeaderContent(name: String, surname: String, vm: AppViewModel, navCo
 
 val banners = listOf(
     R.drawable.ic_banner,
-    R.drawable.banner,
-    R.drawable.banner2,
-    R.drawable.banner3,
-    R.drawable.banner4,
-    R.drawable.banner5
+    R.drawable.theonly,
+    R.drawable.yesterdaynow,
+    R.drawable.fearforget,
+    R.drawable.takevery,
+    R.drawable.nobodycar
 )
 
 fun getRandomBanner(): Int {

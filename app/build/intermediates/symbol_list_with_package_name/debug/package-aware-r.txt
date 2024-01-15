@@ -1764,11 +1764,6 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable banner
-drawable banner2
-drawable banner3
-drawable banner4
-drawable banner5
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1801,6 +1796,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fearforget
 drawable frame_hexagon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1864,6 +1860,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nobodycar
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1878,10 +1875,14 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pp_default
+drawable soretodaypng
+drawable takevery
 drawable test_custom_background
 drawable test_level_drawable
+drawable theonly
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable yesterdaynow
 font nunito
 font nunitobold
 font roboto

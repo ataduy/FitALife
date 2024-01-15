@@ -217,7 +217,7 @@ fun DietCard(
             modifier = Modifier
                 .clickable { onDietSelected() }
                 .padding(16.dp)
-                .size(width = 80.dp, height = 110.dp)
+                .size(width = 88.dp, height = 121.dp)
                 .background(Color.Transparent)
                 .clip(RoundedCornerShape(16.dp))
         ) {
@@ -233,9 +233,9 @@ fun DietCard(
                 painter = dietImage,
                 contentDescription = "Keto",
                 modifier = Modifier
-                    .size(44.dp)
+                    .size(49.dp) // 15% bigger
                     .align(Alignment.TopCenter)
-                    .offset(y = 30.dp)
+                    .offset(y = 34.dp)
             )
         }
         // Keto Text
